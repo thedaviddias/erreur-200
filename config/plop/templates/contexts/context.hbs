@@ -1,0 +1,27 @@
+import { useState, createContext, ReactNode } from 'react'
+
+interface I{{ properCase name }}Context {
+  value: ReactNode
+  updateValue: (arg: string) => void
+}
+
+const DEFAULT_CONTEXT = {
+  value: null,
+  updateValue: () => null,
+}
+
+export const {{ properCase name }}Context = createContext<I{{ properCase name }}Context>(DEFAULT_CONTEXT)
+
+interface I{{ properCase name }}ProviderProps {
+  children: ReactNode
+}
+
+export const {{ properCase name }}Provider = ({ children }: I{{ properCase name }}ProviderProps) => {
+  const [value, setValue] = useState<ReactNode | null>(null)
+
+  const updateValue = () => {
+    setValue('hello')
+  }
+
+  return <{{ properCase name }}Context.Provider value=\{{ value, updateValue }}>{children}</{{ properCase name }}Context.Provider>
+}

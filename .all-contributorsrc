@@ -1,0 +1,14 @@
+{
+  "projectName": "erreur-200",
+  "projectOwner": "David Dias",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commitConvention": "none",
+  "contributors": [],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}
