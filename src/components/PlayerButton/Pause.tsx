@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Pause = () => {
   return (
-    <svg width="95" height="95" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="60" height="60" viewBox="0 0 95 95" fill="white" xmlns="http://www.w3.org/2000/svg">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

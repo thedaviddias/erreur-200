@@ -25,9 +25,11 @@ export const PlayerButton = ({ id }) => {
   return (
     <button
       type="button"
-      // className={`${styles.button_play} ${
-      //   isOnAir && playerStatus === 'PLAY' ? styles.PLAY : styles.PAUSE
-      // }`}
+      className={`${
+        isOnAir && playerStatus === 'PLAY'
+          ? `bg-indigo-300 hover:bg-indigo-400`
+          : `bg-indigo-600 hover:bg-indigo-700`
+      } inline-flex px-1 py-1 border border-transparent text-base font-medium rounded-full shadow-sm text-white`}
       onClick={setEpisode}
       aria-label="Ecouter l'épisode du podcast Erreur 200"
     >

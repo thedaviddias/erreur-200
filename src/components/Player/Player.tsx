@@ -1,5 +1,5 @@
 /* eslint jsx-a11y/media-has-caption:0 */
-import React, { useContext, useEffect, useLayoutEffect, useRef, useState } from 'react'
+import React, { useContext, useLayoutEffect, useRef, useState } from 'react'
 
 import 'plyr-react/dist/plyr.css'
 
@@ -20,7 +20,7 @@ export const Player = () => {
 
   const { current } = state
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (window.Plyr && current?.node) {
       const source = {
         type: 'audio',
@@ -67,17 +67,19 @@ export const Player = () => {
   // const d = current && new Date(currentTrack?.frontmatter?.publicationDate)
 
   return (
-    <>
-      <audio
-        preload="none"
-        ref={player}
-        controls
-        style={{
-          display: 'none',
-        }}
-      >
-        <source src={currentTrack?.frontmatter.url} type="audio/mp3" />
-      </audio>
-    </>
+    <div className="fixed bg-gray-400 w-screen -inset-x-0 bottom-0 p-4">
+      <div className="relative max-w-2xl mx-auto">
+        <audio
+          preload="none"
+          ref={player}
+          controls
+          style={{
+            display: 'none',
+          }}
+        >
+          <source src={currentTrack?.frontmatter.url} type="audio/mp3" />
+        </audio>
+      </div>
+    </div>
   )
 }

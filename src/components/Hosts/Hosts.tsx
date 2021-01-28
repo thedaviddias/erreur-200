@@ -10,7 +10,7 @@ export const Hosts = () => {
   const { hosts } = useHostsList()
 
   return (
-    <>
+    <div className="flex">
       {hosts.edges.map(({ node }) => {
         const { name, twitter, website, image } = node
 
@@ -25,11 +25,11 @@ export const Hosts = () => {
               <LinkCustom href={website}>{wurl}</LinkCustom>
             </div>
             <div>
-              <Img fixed={image.childImageSharp.fixed} alt={name} />
+              <Img className="rounded-full" fixed={image.childImageSharp.fixed} alt={name} />
             </div>
           </div>
         )
       })}
-    </>
+    </div>
   )
 }
