@@ -6,26 +6,30 @@ import { v4 as uuid } from 'uuid'
 import { useHostsList } from '../../hooks/useHostsList'
 import { LinkCustom } from '../LinkCustom'
 
-export const Hosts = () => {
+export const Hosts: React.FC = () => {
   const { hosts } = useHostsList()
 
   return (
-    <div className="flex">
+    <div className="flex ml-auto">
       {hosts.edges.map(({ node }) => {
-        const { name, twitter, website, image } = node
+        const { name, twitter, image } = node
 
-        const twname = twitter ? twitter.substring(twitter.lastIndexOf('/') + 1) : ''
-        const wurl = website ? website.replace('https://', '') : ''
+        const twitterName = twitter ? twitter.substring(twitter.lastIndexOf('/') + 1) : ''
 
         return (
-          <div key={uuid()}>
-            <div>
-              <strong>{name}</strong>
-              <LinkCustom to={twitter}>{`@${twname}`}</LinkCustom>
-              <LinkCustom href={website}>{wurl}</LinkCustom>
+          <div className="max-w-xs my-3" key={uuid()}>
+            <div className="flex justify-center">
+              <Img
+                className="rounded-full border-solid border-white border-2"
+                fixed={image.childImageSharp.fixed}
+                alt={name}
+              />
             </div>
-            <div>
-              <Img className="rounded-full" fixed={image.childImageSharp.fixed} alt={name} />
+            <div className="text-center px-3 pb-6 pt-2">
+              <p className="text-white text-xl bold font-sans">{name}</p>
+              <p className="mt-1 font-sans text-m font-light text-grey-dark hover:underline hover:text-tertiary">
+                <LinkCustom to={twitter}>{`@${twitterName}`}</LinkCustom>
+              </p>
             </div>
           </div>
         )

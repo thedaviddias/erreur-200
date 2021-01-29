@@ -5,30 +5,43 @@ import { Helmet } from 'react-helmet'
 import { useSiteMetadata } from '../../hooks/useSiteMetadata'
 
 export const Seo = ({ description, title, image }) => {
-  const { siteMetadata } = useSiteMetadata()
-  const { titleDefault, descriptionDefault, siteName, imageDefault } = siteMetadata
+  const { siteTitle, siteDescription, siteName, imageDefault } = useSiteMetadata()
+
   const _lang = 'fr'
   const _meta = []
+
+  // const socialImage = getShareImage({
+  //   title: blogPost.title,
+  //   tagline: blogPost.tags.map(tag => `#${tag}`).join(' '),
+  //   cloudName: 'jlengstorf',
+  //   imagePublicID: 'lwj/blog-post-card',
+  //   titleFont: 'lwj-title.otf',
+  //   titleExtraConfig: '_line_spacing_-10',
+  //   taglineFont: 'lwj-tagline.otf',
+  //   textColor: '232129',
+  // });
+
+  // https://github.com/jlengstorf/learnwithjason.dev/blob/070468828e8c758d150a8d573fd471d786278243/packages/%40jlengstorf/gatsby-theme-code-blog/src/gatsby-theme-blog-core/components/post.js#L55-L64
 
   return (
     <Helmet
       htmlAttributes={{
         lang: _lang,
       }}
-      title={`${title || titleDefault} | ${siteName}`}
+      title={`${title || siteTitle} | ${siteName}`}
       meta={[
         ...[
           {
             name: `description`,
-            content: description || descriptionDefault,
+            content: description || siteDescription,
           },
           {
             property: `og:title`,
-            content: title || titleDefault,
+            content: title || siteTitle,
           },
           {
             property: `og:description`,
-            content: description || descriptionDefault,
+            content: description || siteDescription,
           },
           {
             property: `og:type`,
@@ -56,11 +69,11 @@ export const Seo = ({ description, title, image }) => {
           //     // },
           {
             name: `twitter:title`,
-            content: title || titleDefault,
+            content: title || siteTitle,
           },
           {
             name: `twitter:description`,
-            content: description || descriptionDefault,
+            content: description || siteDescription,
           },
         ],
         ..._meta,

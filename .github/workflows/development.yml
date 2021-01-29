@@ -45,23 +45,28 @@ jobs:
       #     files: ./coverage/lcov.info
       #     token: ${{ secrets.CODECOV_TOKEN }} # only necessary for private repo
 
-      - name: 📦 Build app
-        run: yarn build
-
-      - name: 💬 Send Message to Slack
-        uses: 8398a7/action-slack@v3
+      - name: 🚀 Deploy to Netlify
+        uses: netlify/actions/cli@master
         with:
-          status: custom
-          fields: workflow,job,commit,repo,ref,author,took
-          custom_payload: |
-            {
-              username: 'development-workflow',
-              icon_emoji: ':octocat:',
-              attachments: [{
-                color: '${{ job.status }}' === 'success' ? 'good' : '${{ job.status }}' === 'failure' ? 'danger' : 'warning',
-                text: `${process.env.AS_WORKFLOW}\n${process.env.AS_JOB}`
-              }]
-            }
+          args: deploy
         env:
-          GITHUB_TOKEN: ${{ github.token }}
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+      # - name: 💬 Send Message to Slack
+      #   uses: 8398a7/action-slack@v3
+      #   with:
+      #     status: custom
+      #     fields: workflow,job,commit,repo,ref,author,took
+      #     custom_payload: |
+      #       {
+      #         username: 'development-workflow',
+      #         icon_emoji: ':octocat:',
+      #         attachments: [{
+      #           color: '${{ job.status }}' === 'success' ? 'good' : '${{ job.status }}' === 'failure' ? 'danger' : 'warning',
+      #           text: `${process.env.AS_WORKFLOW}\n${process.env.AS_JOB}`
+      #         }]
+      #       }
+      #   env:
+      #     GITHUB_TOKEN: ${{ github.token }}
+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

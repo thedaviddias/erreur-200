@@ -3,6 +3,7 @@ import React, { useContext, useLayoutEffect, useRef, useState } from 'react'
 
 import 'plyr-react/dist/plyr.css'
 
+import { LinkCustom } from '..'
 import { EpisodesContext } from '../../contexts/EpisodesContext'
 
 const options = {
@@ -27,7 +28,7 @@ export const Player = () => {
         title: current.node.frontmatter.title,
         sources: [
           {
-            src: `https://erreur200.s3.eu-west-3.amazonaws.com/${current.node.frontmatter.url}`,
+            src: `${current.node.frontmatter.url}`,
             type: 'audio/mp3',
           },
         ],
@@ -64,11 +65,20 @@ export const Player = () => {
 
   // const { frontmatter } = currentTrack && currentTrack
   // const { slug } = currentTrack?.fields
-  // const d = current && new Date(currentTrack?.frontmatter?.publicationDate)
+  const d = current && new Date(currentTrack?.frontmatter?.publicationDate)
 
   return (
-    <div className="fixed bg-gray-400 w-screen -inset-x-0 bottom-0 p-4">
-      <div className="relative max-w-2xl mx-auto">
+    <div className="bg-secondary fixed w-screen -inset-x-0 bottom-0 p-2 border-solid border-black border-t-2 shadow-md">
+      <div className="relative max-w-4xl mx-auto">
+        <div className="flex mb-1 mx-4">
+          {currentTrack?.fields?.slug && (
+            <LinkCustom href={currentTrack?.fields?.slug}>
+              {currentTrack?.frontmatter.title}
+            </LinkCustom>
+          )}
+
+          <p className="ml-auto">{d?.toLocaleDateString('fr-FR', options)}</p>
+        </div>
         <audio
           preload="none"
           ref={player}

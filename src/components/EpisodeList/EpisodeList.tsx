@@ -6,7 +6,7 @@ import { usePodcastsList } from '../../hooks'
 export const EpisodeList = () => {
   const podcastList = usePodcastsList()
   return (
-    <div>
+    <div className="divide-y divide-gray-500">
       {podcastList.podcastEpisodes.edges.map(({ node }) => {
         return <Episode key={node.id} node={node} />
       })}

@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-white;
+  }
+}
+
+
+.react-icons {
+  vertical-align: middle;
+}
+
+:root {
+  --plyr-audio-controls-background: @apply text-secondary;
+  --plyr-audio-control-color: @apply text-white;
+  --plyr-color-main: @apply bg-tertiary;
+  --plyr-range-fill-background: @apply bg-tertiary;
+}

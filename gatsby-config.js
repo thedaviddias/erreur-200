@@ -1,38 +1,17 @@
-const urljoin = require("url-join");
 const config = require("./data/site-config");
 const podcastInfo = require('./data/podcast-infos');
 
 module.exports = {
   pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
-  siteMetadata: {
-    ...config,
-    siteUrl: urljoin(config.siteUrl, config.pathPrefix),
-    siteName: config.siteTitle,
-    titleDefault: config.siteTitleShort,
-    author: '',
-    descriptionDefault: config.siteDescription,
-    imageDefault:
-    'https://res.cloudinary.com/doubleslash/image/upload/v1597260128/doubleSlashDefault_kyl8s9.png',
-    rssMetadata: {
-      site_url: urljoin(config.siteUrl, config.pathPrefix),
-      feed_url: urljoin(config.siteUrl, config.pathPrefix, config.siteRss),
-      title: config.siteTitle,
-      description: config.siteDescription,
-      // image_url: `${urljoin(
-      //   config.siteUrl,
-      //   config.pathPrefix
-      // )}/logos/code_chefs_square512.png`,
-      copyright: config.copyright
-    }
-  },
+  siteMetadata: config,
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `assets`,
+        path: `${__dirname}/static/assets`,
       },
     },
     {
@@ -125,19 +104,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: config.siteTitle,
+        short_name: config.siteTitleShort,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `static/assets/logo-erreur-200.png`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/*`, `/episodes/*`],
+        precachePages: [`/*`, `/episodes/*`, '/about', '/be-a-guest'],
       },
     }
   ],

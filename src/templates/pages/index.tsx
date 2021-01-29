@@ -15,6 +15,7 @@ const Page = ({ data, location }) => {
         title={title}
         description={description && description !== '' ? description : mdx.excerpt}
       />
+      <h1 className="sr-only">List des épisodes du podcast Erreur 200</h1>
       <MDXRenderer>{mdx.body}</MDXRenderer>{' '}
     </>
   )

@@ -4,7 +4,23 @@ import GatsbyLink from 'gatsby-link'
 
 import { isExternalLink } from '../../utils'
 
-export const LinkCustom = ({ children, href, to, title, onClick }) => {
+interface ILinkCustomProps {
+  href?: string
+  to?: string
+  className?: string
+  onClick?: any
+  children: React.ReactNode
+  title?: string
+}
+
+export const LinkCustom: React.FC<ILinkCustomProps> = ({
+  children,
+  href,
+  to,
+  title,
+  className,
+  onClick,
+}) => {
   let _to = to
   // mdx pass url with href
   if (!_to && href) {
@@ -13,14 +29,21 @@ export const LinkCustom = ({ children, href, to, title, onClick }) => {
 
   if (isExternalLink(_to) === false) {
     return (
-      <GatsbyLink to={_to} title={title}>
+      <GatsbyLink className={`${className || ''}`} to={_to} title={title}>
         {children}
       </GatsbyLink>
     )
   }
 
   return (
-    <a href={_to} title={title} onClick={onClick} target="_blank" rel="noreferrer">
+    <a
+      href={_to}
+      title={title}
+      onClick={onClick}
+      target="_blank"
+      rel="noreferrer"
+      className={`${className || ''}`}
+    >
       {children}
     </a>
   )

@@ -4,19 +4,22 @@ const {createFilePath} = require(`gatsby-source-filesystem`);
 
 exports.createSchemaCustomization = ({actions, schema}) => {
   const {createTypes} = actions;
+
   createTypes(`type Mdx implements Node @infer {
     frontmatter: MdxFrontmatter!
   }`);
+
   createTypes(`type MarkdownRemark implements Node @infer {
     frontmatter: MdxFrontmatter!
   }`);
+
   const typeDefs = [
     schema.buildObjectType({
       name: 'MdxFrontmatter',
       fields: {
         title: 'String!',
         subtitle: 'String',
-        url: 'String!',
+        path: 'String!',
         publicationDate: {
           type: 'Date',
           extensions: {
@@ -42,7 +45,7 @@ exports.createSchemaCustomization = ({actions, schema}) => {
 exports.onCreateNode = ({node, getNode, actions}) => {
   const {createNodeField} = actions;
   if (node.internal.type === `Mdx` || node.internal.type === `MarkdownRemark`) {
-    const {slug, isHome} = node.frontmatter;
+    const { slug, isHome } = node.frontmatter;
 
     // create slug
     let _slug = slug
@@ -60,6 +63,8 @@ exports.onCreateNode = ({node, getNode, actions}) => {
     if (isHome === true) {
       _slug = '/';
     }
+
+    // console.log(_slug);
 
     // add slug in field
     createNodeField({
@@ -83,6 +88,9 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 
 exports.createPages = async attr => {
   const {graphql, actions} = attr;
+
+  const episodeTemplate = path.resolve(`./src/templates/episodes/index.tsx`)
+  const pageTemplate = path.resolve(`./src/templates/pages/index.tsx`)
 
   const result = await graphql(`
     query {
@@ -117,11 +125,11 @@ exports.createPages = async attr => {
     }
   `);
 
+  // create episode
   result.data.episodes.edges.forEach(({node}) => {
-    // create page for product
     actions.createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/episodes/index.tsx`),
+      component: episodeTemplate,
       context: {
         slug: node.fields.slug,
       },
@@ -132,7 +140,7 @@ exports.createPages = async attr => {
   result.data.pages.edges.forEach(({node}) => {
     actions.createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/pages/index.tsx`),
+      component: pageTemplate,
       context: {
         slug: node.fields.slug,
       },

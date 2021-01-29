@@ -2,17 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 export const useHostsList = () =>
   useStaticQuery(graphql`
-    query Authors {
-      authors: allDataYaml(filter: { fields: { type: { eq: "hosts" } } }) {
-        edges {
-          node {
-            twitter
-            website
-            name
-            id
-          }
-        }
-      }
+    query Hosts {
       hosts: allDataYaml(
         filter: { fields: { type: { eq: "hosts" } }, name: { regex: "/(David|Jean-Rémy)/" } }
       ) {
@@ -25,7 +15,7 @@ export const useHostsList = () =>
             image {
               publicURL
               childImageSharp {
-                fixed(width: 120, quality: 100) {
+                fixed(width: 80, quality: 100) {
                   ...GatsbyImageSharpFixed_withWebp
                 }
               }

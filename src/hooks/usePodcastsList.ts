@@ -1,6 +1,27 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
-export const usePodcastsList = () =>
+interface IUsePodcastsList {
+  edges: {
+    node: {
+      id: string
+      excerpt: string
+      fields: {
+        slug: string
+      }
+      frontmatter: {
+        title: string
+        subtitle: string
+        duration: number
+        url: string
+        season: number
+        episodeNumber: number
+        publicationDate: string
+      }
+    }
+  }
+}
+
+export const usePodcastsList = (): IUsePodcastsList =>
   useStaticQuery(graphql`
     query PodcastList {
       podcastEpisodes: allMdx(
