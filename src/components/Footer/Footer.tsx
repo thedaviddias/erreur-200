@@ -13,7 +13,7 @@ export const Footer = () => {
           <div className="px-5 py-2">
             <LinkCustom
               href="/about"
-              className="text-base text-gray-500 hover:text-white hover:underline"
+              className="text-base text-gray-300 underline hover:text-white hover:underline"
             >
               À propos
             </LinkCustom>
@@ -22,7 +22,7 @@ export const Footer = () => {
           <div className="px-5 py-2">
             <LinkCustom
               href="/be-a-guest"
-              className="text-base text-gray-500 hover:text-white hover:underline"
+              className="text-base text-gray-300 underline hover:text-white hover:underline"
             >
               Être invité
             </LinkCustom>
@@ -31,7 +31,7 @@ export const Footer = () => {
           <div className="px-5 py-2">
             <LinkCustom
               href="/cookies"
-              className="text-base text-gray-500 hover:text-white hover:underline"
+              className="text-base text-gray-300 underline hover:text-white hover:underline"
             >
               Cookies
             </LinkCustom>
@@ -39,8 +39,15 @@ export const Footer = () => {
         </nav>
 
         <p className="mt-8 text-center text-base text-gray-400">
-          {copyright} - Fait avec <LinkCustom to="https://www.gatsbyjs.com/">Gatsby</LinkCustom>,
-          hébergé sur <LinkCustom to="https://www.netlify.com/">Netlify</LinkCustom> (
+          {copyright} - Fait avec{' '}
+          <LinkCustom to="https://www.gatsbyjs.com/" className="hover:text-white hover:underline">
+            Gatsby
+          </LinkCustom>
+          , hébergé sur{' '}
+          <LinkCustom to="https://www.netlify.com/" className="hover:text-white hover:underline">
+            Netlify
+          </LinkCustom>{' '}
+          (
           <LinkCustom to={githubRepo} className="text-base hover:text-white hover:underline">
             Source code
           </LinkCustom>

@@ -11,7 +11,7 @@ collections:
     label: "Episodes"
     folder: "content/episodes"
     create: true
-    slug: "00{{episodeNumber}}-{{slug}}.md"
+    slug: "{{episodeNumber}}-{{slug}}.md"
     fields:
       - { label: "Episode Number", name: "episodeNumber", widget: "number" }
       - { label: "Season", name: "season", widget: "hidden", default: 1 }

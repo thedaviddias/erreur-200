@@ -7,9 +7,15 @@ interface IPlayerEpisode {
   id: string
   title: string
   duration: string
+  fileAbsolutePath: string
 }
 
-export const PlayerEpisode: React.FC<IPlayerEpisode> = ({ id, title, duration }) => {
+export const PlayerEpisode: React.FC<IPlayerEpisode> = ({
+  id,
+  title,
+  duration,
+  fileAbsolutePath,
+}) => {
   return (
     <div className="border-solid border-primaryDark border-4 p-4 rounded-lg max-w-l my-3 flex">
       <div>
@@ -20,7 +26,7 @@ export const PlayerEpisode: React.FC<IPlayerEpisode> = ({ id, title, duration })
         <p>Durée: {duration && <span>{`${secondToTime(duration)}`}</span>}</p>
 
         <LinkCustom
-          href="#"
+          href={fileAbsolutePath}
           className="inline-flex justify-center py-2 px-4 rounded-md text-sm font-medium"
         >
           <span className="sr-only">Télécharger l'épisode</span>

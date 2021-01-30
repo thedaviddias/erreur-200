@@ -10,7 +10,7 @@ export const Hosts: React.FC = () => {
   const { hosts } = useHostsList()
 
   return (
-    <div className="flex ml-auto">
+    <div className="flex mx-auto md:ml-auto">
       {hosts.edges.map(({ node }) => {
         const { name, twitter, image } = node
 
@@ -26,7 +26,7 @@ export const Hosts: React.FC = () => {
               />
             </div>
             <div className="text-center px-3 pb-6 pt-2">
-              <p className="text-white text-xl bold font-sans">{name}</p>
+              <p className="text-white text-l md:text-xl bold font-sans">{name}</p>
               <p className="mt-1 font-sans text-m font-light text-grey-dark hover:underline hover:text-tertiary">
                 <LinkCustom to={twitter}>{`@${twitterName}`}</LinkCustom>
               </p>

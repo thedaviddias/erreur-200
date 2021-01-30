@@ -24,6 +24,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
+        googleAnalytics: {
+          trackingId: config.googleAnalyticsID,
+        },
         defaultLang: 'fr'
       },
     },
@@ -50,6 +53,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-recaptcha`,
+      options: {
+         async: true,
+         defer: true,
+         args: `?onload=onloadCallback&render=explicit`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
@@ -62,14 +73,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          config.googleAnalyticsID,
-        ]
       },
     },
     {
@@ -110,7 +113,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: `minimal-ui`,
-        icon: `static/assets/logo-erreur-200.png`, // This path is relative to the root of the site.
+        icon: `static/assets/logo-erreur-200.png`,
       },
     },
     {

@@ -19,12 +19,12 @@ const config = {
   copyright: "Erreur 200 © 2021", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#b12518ff", // Used for setting manifest and progress theme colors.
   backgroundColor: "#1a2940ff", // Used for setting manifest background color.
-  imageDefault: "/assets/erreur-200-podcast-artwork.jpg",
+  imageDefault: "https://res.cloudinary.com/thedaviddias/image/upload/v1612027685/erreur-200/erreur-200-podcast-artwork.jpg",
   s3bucket: 'https://erreur200.s3.eu-west-3.amazonaws.com/',
-  githubRepo: 'https://github.com/thedaviddias/erreur-200'
+  githubRepo: 'https://github.com/thedaviddias/erreur-200',
+  formspreeUrl: 'https://formspree.io/f/xeqpdqqa',
+  recaptchaSiteKeyV2: '6Lc7BEMaAAAAAEcM_2xtfR7hDvytXT8osD8Jxdjm'
 };
-
-// Validate
 
 // Make sure pathPrefix is empty if not needed
 if (config.pathPrefix === "/") {

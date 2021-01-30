@@ -1,11 +1,10 @@
 {
   "branches": "main",
-  "repositoryUrl": "https://github.com/thedaviddias/mysnippets.codes",
+  "repositoryUrl": "https://github.com/thedaviddias/erreur-200",
   "debug": "true",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/npm",
     "@semantic-release/github",
     [
       "@semantic-release/changelog",

@@ -1,7 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
 interface IUseSiteMetadata {
-  // Site title.
   siteTitle: string
   siteTitleShort: string
   siteTitleAlt: string
@@ -25,6 +24,8 @@ interface IUseSiteMetadata {
   s3bucket: string
   githubRepo: string
   imageDefault: string
+  formspreeUrl: string
+  recaptchaSiteKeyV2: string
 }
 
 export const useSiteMetadata = (): IUseSiteMetadata => {
@@ -55,6 +56,8 @@ export const useSiteMetadata = (): IUseSiteMetadata => {
           s3bucket
           githubRepo
           imageDefault
+          formspreeUrl
+          recaptchaSiteKeyV2
         }
       }
     }

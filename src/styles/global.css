@@ -8,11 +8,6 @@
   }
 }
 
-
-.react-icons {
-  vertical-align: middle;
-}
-
 :root {
   --plyr-audio-controls-background: @apply text-secondary;
   --plyr-audio-control-color: @apply text-white;

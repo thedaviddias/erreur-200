@@ -1,23 +1,28 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
-interface IUsePodcastsList {
-  edges: {
-    node: {
-      id: string
-      excerpt: string
-      fields: {
-        slug: string
-      }
-      frontmatter: {
-        title: string
-        subtitle: string
-        duration: number
-        url: string
-        season: number
-        episodeNumber: number
-        publicationDate: string
-      }
+export interface IPodcastListNode {
+  node: {
+    id: string
+    excerpt: string
+    fields: {
+      slug: string
     }
+    frontmatter: {
+      title: string
+      subtitle: string
+      duration: number
+      url: string
+      season: number
+      episodeNumber: number
+      publicationDate: string
+      size: number
+    }
+  }
+}
+
+interface IUsePodcastsList {
+  podcastEpisodes: {
+    edges: IPodcastListNode
   }
 }
 
@@ -43,6 +48,7 @@ export const usePodcastsList = (): IUsePodcastsList =>
               season
               episodeNumber
               publicationDate
+              size
             }
           }
         }

@@ -7,12 +7,12 @@ title: 00 - Prologue
 slug: prologue
 subtitle: Présentation du podcast "Erreur 200",
 publicationDate: 2021-02-02
-url: https://erreur200.s3.eu-west-3.amazonaws.com/00-prologue.mp3
+url: ''
 status: published
 author: Erreur 200
 episodeType: full
-size: 1234
-duration: 553
+size: 0
+duration: 0
 explicit: false
 categories:
   - Technology

@@ -15,11 +15,11 @@ export const Platforms: React.FC = () => {
 
   return (
     <ul className="flex flex-wrap py-5 mt-4">
-      <li className="mx-2">
+      <li className="p-2">
         <LinkCustom key={uuid} to={rssUrl} title="RSS">
           <svg
             viewBox="0 0 24 24"
-            className="h-6 w-6 fill-current text-white hover:text-tertiary"
+            className="h-8 w-8 fill-current text-white hover:text-tertiary md:h-6 md:w-6"
             height="24"
             width="24"
           >
@@ -27,11 +27,11 @@ export const Platforms: React.FC = () => {
           </svg>
         </LinkCustom>
       </li>
-      <li className="mx-2">
+      <li className="p-2">
         <LinkCustom key={uuid} to={applePodcastUrl} title="Apple Podcasts">
           <svg
             viewBox="0 0 24 24"
-            className="h-6 w-6 fill-current text-white hover:text-tertiary"
+            className="h-8 w-8 fill-current text-white hover:text-tertiary md:h-6 md:w-6"
             height="24"
             width="24"
           >
@@ -39,11 +39,11 @@ export const Platforms: React.FC = () => {
           </svg>
         </LinkCustom>
       </li>
-      <li className="mx-2">
+      <li className="p-2">
         <LinkCustom key={uuid} to={spotifyUrl} title="Spotify">
           <svg
             viewBox="0 0 24 24"
-            className="h-6 w-6 fill-current text-white hover:text-tertiary"
+            className="h-8 w-8 fill-current text-white hover:text-tertiary md:h-6 md:w-6"
             height="24"
             width="24"
           >
@@ -51,11 +51,11 @@ export const Platforms: React.FC = () => {
           </svg>
         </LinkCustom>
       </li>
-      <li className="mx-2">
+      <li className="p-2">
         <LinkCustom key={uuid} to={googlePodcastUrl} title="Google Podcasts">
           <svg
             viewBox="0 0 24 24"
-            className="h-6 w-6 fill-current text-white hover:text-tertiary"
+            className="h-8 w-8 fill-current text-white hover:text-tertiary md:h-6 md:w-6"
             height="24"
             width="24"
           >
@@ -63,11 +63,11 @@ export const Platforms: React.FC = () => {
           </svg>
         </LinkCustom>
       </li>
-      <li className="mx-2">
+      <li className="p-2">
         <LinkCustom key={uuid} to={overcastUrl} title="Overcast">
           <svg
             viewBox="0 0 24 24"
-            className="h-6 w-6 fill-current text-white hover:text-tertiary"
+            className="h-8 w-8 fill-current text-white hover:text-tertiary md:h-6 md:w-6"
             height="24"
             width="24"
           >
@@ -75,11 +75,11 @@ export const Platforms: React.FC = () => {
           </svg>
         </LinkCustom>
       </li>
-      <li className="mx-2">
+      <li className="p-2">
         <LinkCustom key={uuid} to={youtubeUrl} title="Youtube">
           <svg
             viewBox="0 0 24 24"
-            className="h-6 w-6 fill-current text-white hover:text-tertiary"
+            className="h-8 w-8 fill-current text-white hover:text-tertiary md:h-6 md:w-6"
             height="24"
             width="24"
           >
@@ -87,11 +87,11 @@ export const Platforms: React.FC = () => {
           </svg>
         </LinkCustom>
       </li>
-      <li className="mx-2">
+      <li className="p-2">
         <LinkCustom key={uuid} to={discordUrl} title="Discord">
           <svg
             viewBox="0 0 24 24"
-            className="h-6 w-6 fill-current text-white hover:text-tertiary"
+            className="h-8 w-8 fill-current text-white hover:text-tertiary md:h-6 md:w-6"
             height="24"
             width="24"
           >

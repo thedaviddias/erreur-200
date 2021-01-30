@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, useEffect, useContext } from 'react'
+import React, { createContext, useReducer, useEffect } from 'react'
 
 import { usePodcastsList } from '../hooks/index'
 
@@ -49,7 +49,7 @@ const reducer = (state, action) => {
   }
 }
 
-export const EpisodesProvider = ({ children }) => {
+export const EpisodesProvider: React.FC = ({ children }) => {
   const { podcastEpisodes } = usePodcastsList()
   const [state, dispatch] = useReducer(reducer, initialState)
 

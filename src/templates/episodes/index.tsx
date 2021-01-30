@@ -1,31 +1,21 @@
-import { url } from 'inspector'
-
 import React, { useEffect, useContext } from 'react'
 
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
+import { LinkCustom } from '../../components/LinkCustom'
 import { Meta } from '../../components/Meta'
 import { PlayerEpisode } from '../../components/Player'
 import { Seo } from '../../components/Seo'
-import { Webmention } from '../../components/Webmention'
 import { EpisodesContext } from '../../contexts/EpisodesContext'
 
-// const getImgURL = ({ episodeNumber, title }) =>
-//   `https://res.cloudinary.com/thedaviddias/image/upload/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:%23${episodeNumber},x_54/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:${cleanAndEncodeURI(
-//     title
-//   )},x_54,y_150,w_1000/v1597238012/FACEBOOK_-_OG_Card_RAW_eu5xdv.png`
-
-const Episode = ({ data, location }) => {
+const Episode: React.FC = ({ data }) => {
   const { state, dispatch } = useContext(EpisodesContext)
-  const { mdx, site } = data
-  const { siteMetadata } = site
-  const { frontmatter, id, fileAbsolutePath, fields } = mdx
+  const { mdx } = data
+  const { frontmatter, id, fileAbsolutePath } = mdx
 
-  const { title, subtitle, episodeNumber, duration, publicationDate } = frontmatter
+  const { title, subtitle, duration, publicationDate } = frontmatter
   const d = new Date(publicationDate)
-
-  const url = new URL(`episodes/${fields.slug}`, siteMetadata.siteUrl).href || siteMetadata.siteUrl
 
   useEffect(() => {
     if (!state.podcastEnter) {
@@ -38,11 +28,7 @@ const Episode = ({ data, location }) => {
 
   return (
     <>
-      <Seo
-        title={title}
-        // image={getImgURL({ episodeNumber, title })}
-        description={subtitle && subtitle !== '' ? subtitle : mdx.excerpt}
-      />
+      <Seo title={title} description={subtitle && subtitle !== '' ? subtitle : mdx.excerpt} />
       <article className="h-card">
         <header className="pb-4">
           <Meta publicationDate={publicationDate} />
@@ -59,14 +45,30 @@ const Episode = ({ data, location }) => {
           </time>
         </header>
 
-        <PlayerEpisode id={id} title={title} duration={duration} />
+        {duration !== 0 && (
+          <PlayerEpisode
+            id={id}
+            title={title}
+            duration={duration}
+            fileAbsolutePath={fileAbsolutePath}
+          />
+        )}
 
         <div className="py-5 markdown p-summary e-content">
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </div>
       </article>
 
-      <Webmention target={url} />
+      <hr />
+
+      <div className="markdown">
+        <h2>Venez échanger avec la communauté!</h2>
+
+        <p>
+          Rejoignez nous sur <LinkCustom to="#">Discord</LinkCustom> pour échanger davantage sur le
+          sujet de ce podcast.
+        </p>
+      </div>
     </>
   )
 }
@@ -74,7 +76,7 @@ const Episode = ({ data, location }) => {
 export default Episode
 
 export const query = graphql`
-  query PodcastQuery($slug: String!) {
+  query EpisodeQuery($slug: String!) {
     site {
       siteMetadata {
         siteUrl
@@ -90,6 +92,7 @@ export const query = graphql`
         duration
         season
         episodeNumber
+        size
       }
       id
       body

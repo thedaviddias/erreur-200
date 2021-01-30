@@ -5,7 +5,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import { Seo } from '../../components/Seo'
 
-const Page = ({ data, location }) => {
+const Page: React.FC = ({ data }) => {
   const { mdx } = data
   const { frontmatter } = mdx
   const { title, description, isHome } = frontmatter
@@ -14,8 +14,9 @@ const Page = ({ data, location }) => {
       <Seo
         title={title}
         description={description && description !== '' ? description : mdx.excerpt}
+        isDefault
       />
-      <h1 className="sr-only">List des épisodes du podcast Erreur 200</h1>
+      {isHome && <h1 className="sr-only">List des épisodes du podcast Erreur 200</h1>}
       <MDXRenderer>{mdx.body}</MDXRenderer>{' '}
     </>
   )

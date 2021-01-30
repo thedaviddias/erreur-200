@@ -37,7 +37,7 @@ const episodePlop = plop => {
 			const actions = [
       {
         type: 'add',
-        path: '../../content/episodes/{{kebabCase name}}.md',
+        path: '../../content/episodes/{{episodeNumber}}-{{kebabCase name}}.md',
         skipIfExists: true,
         templateFile: 'templates/episode/episode.hbs',
         abortOnFail: true

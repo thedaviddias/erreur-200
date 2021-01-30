@@ -1,10 +1,14 @@
 
 .markdown {
-  @apply leading-relaxed text-sm;
+  @apply leading-relaxed text-base md:text-sm;
 }
 
 .markdown-mention {
   @apply leading-relaxed text-xs;
+}
+
+.markdown h2 {
+  @apply text-xl
 }
 
 @screen sm {
@@ -35,7 +39,7 @@
     @apply text-4xl;
   }
   .markdown h2 {
-    @apply text-2xl;
+    @apply text-3xl;
   }
   .markdown h3,
   .markdown h4,
@@ -101,5 +105,5 @@
 }
 
 .markdown p:first-child {
-  @apply mb-6 text-xl italic;
+  @apply mb-6 text-base italic md:text-xl;
 }

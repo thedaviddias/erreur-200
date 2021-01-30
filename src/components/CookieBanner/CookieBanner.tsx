@@ -1,7 +1,26 @@
 import React from 'react'
 
+import CookieConsent from 'react-cookie-consent'
+
 export const CookieBanner = () => {
-  return <></>
+  return (
+    <CookieConsent
+      disableStyles={true}
+      location="top"
+      buttonText="J'accepte"
+      enableDeclineButton
+      declineButtonText="Je refuse"
+      cookieName="gatsby-gdpr-google-analytics"
+      declineButtonClasses="py-2 px-8 bg-red-800 hover:bg-red-900 text-white rounded font-bold text-sm shadow-xl"
+      buttonClasses="py-2 px-8 bg-gray-800 hover:bg-gray-900 text-white rounded font-bold text-sm shadow-xl mx-3"
+      buttonWrapperClasses="ml-auto"
+      containerClasses="w-full p-5 lg:px-24 absolute top-0 bg-tertiary sm:flex"
+      contentClasses="flex"
+      flipButtons
+    >
+      Ce site utilise des cookies afin d'en améliorer son utilisation.
+    </CookieConsent>
+  )
 }
 
 // <!-- component -->
