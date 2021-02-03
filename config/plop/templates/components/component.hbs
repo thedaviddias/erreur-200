@@ -1,0 +1,18 @@
+import React from 'react'
+{{#if styles}}import { {{ properCase name }}Styled } from './styled'{{/if}}
+{{#if props}}
+
+interface I{{ properCase name }}Props {
+  /**
+   * Default prop description for name
+   *
+   * @default John
+   */
+  name: string
+}
+
+{{/if}}
+
+export const {{ properCase name }} = ({{#if props}}{ name }: I{{ properCase name }}Props{{/if}}) => {
+  return {{#if props}}<{{ properCase name }}Styled>Hello {name}!</{{ properCase name }}Styled>{{else}}<></>{{/if}}
+}

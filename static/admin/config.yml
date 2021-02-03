@@ -1,0 +1,21 @@
+backend:
+  name: github
+  branch: main
+  repo: thedaviddias/erreur-200
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: podcast
+    label: "Episodes"
+    folder: "content/episodes"
+    create: true
+    slug: "{{episodeNumber}}-{{slug}}.md"
+    fields:
+      - { label: "Episode Number", name: "episodeNumber", widget: "number" }
+      - { label: "Season", name: "season", widget: "hidden", default: 1 }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Publication Date", name: "publicationDate", widget: "datetime", default: "2021-01-01", date_format: "DD-MM-YYYY", format: "LLL", picker_utc: false}
+      - { label: "Body", name: "body", widget: "markdown" }

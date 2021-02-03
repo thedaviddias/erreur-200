@@ -1,0 +1,10 @@
+import { render } from '@testing-library/react'
+
+import { {{ properCase name }} } from '@/components/{{ properCase name }}'
+
+describe('{{ properCase name }} exists', () => {
+  it('should renders without crashing', () => {
+    const component = render(<{{ properCase name }} />)
+    expect(component).not.toBeNull()
+  })
+})

@@ -1,0 +1,109 @@
+
+.markdown {
+  @apply leading-relaxed text-base md:text-sm;
+}
+
+.markdown-mention {
+  @apply leading-relaxed text-xs;
+}
+
+.markdown h2 {
+  @apply text-xl
+}
+
+@screen sm {
+  .markdown {
+    @apply text-base;
+  }
+}
+
+@screen lg {
+  .markdown {
+    @apply text-lg;
+  }
+}
+
+.markdown h1,
+.markdown h2 {
+  @apply my-3 leading-5 font-extrabold tracking-tight;
+}
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply text-lg my-3 font-semibold;
+}
+
+@screen sm {
+  .markdown h1 {
+    @apply text-4xl;
+  }
+  .markdown h2 {
+    @apply text-3xl;
+  }
+  .markdown h3,
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    @apply text-xl;
+  }
+}
+
+/* Links */
+.markdown a,
+.markdown-mention a {
+  @apply text-tertiary;
+}
+.markdown a:hover {
+  @apply underline;
+}
+/* Paragraph */
+.markdown p {
+  @apply mb-4;
+}
+/* Lists */
+.markdown ul,
+.markdown ol {
+  @apply mb-4 ml-8;
+}
+.markdown li > p,
+.markdown li > ul,
+.markdown li > ol {
+  @apply mb-0;
+}
+.markdown ol {
+  @apply list-decimal;
+}
+.markdown ul {
+  @apply list-disc;
+}
+/* Blockquotes */
+.markdown blockquote {
+  @apply p-2 mx-6 mb-4 border-l-4 border-tertiary italic;
+}
+.markdown blockquote > p {
+  @apply mb-0;
+}
+/* Tables */
+.markdown td,
+.markdown th {
+  @apply px-2 py-1 border border-tertiary;
+}
+.markdown tr:nth-child(odd) {
+  @apply bg-gray-100;
+}
+.markdown table {
+  @apply mb-6;
+}
+
+/* Wrap any inline highlights `that are really long`, but don't modify
+   the setting for codeblocks (inside ```), which are rendered in as:
+   <pre><code>...
+*/
+.markdown :not(pre) > code.language-text {
+  white-space: pre-line;
+}
+
+.markdown p:first-child {
+  @apply mb-6 text-base italic md:text-xl;
+}
