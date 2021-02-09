@@ -3,13 +3,13 @@ type: podcast-episode
 guid: 7bdb624a-c512-4c76-b490-737bf0efb7e6
 episodeNumber: 0
 season: 1
-title: 00 - Prologue
+title: '00: Prologue'
 slug: prologue
 subtitle: Présentation du podcast "Erreur 200" par David Dias et Jean-Rémy. Une présentation de qui ils sont, les origines de ce nouveau podcast et ce qui vous attends dans les prochains épisodes.
 publicationDate: 2021-02-09
 url: https://erreur200.s3.eu-west-3.amazonaws.com/00-prologue.mp3
 status: published
-author: Erreur 200
+author: David Dias & Jean-Rémy Duboc
 episodeType: full
 size: 848000
 duration: 627
