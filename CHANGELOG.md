@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/thedaviddias/erreur-200/compare/v1.1.0...v1.1.1) (2021-02-09)
+
+
+### Bug Fixes
+
+* fix link to art image podcast ([#3](https://github.com/thedaviddias/erreur-200/issues/3)) ([052d099](https://github.com/thedaviddias/erreur-200/commit/052d0992747a165a2e5941a6cc35b17b26163330))
+
 # [1.1.0](https://github.com/thedaviddias/erreur-200/compare/v1.0.0...v1.1.0) (2021-02-09)
 
 
