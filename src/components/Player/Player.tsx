@@ -65,35 +65,31 @@ export const Player = () => {
 
   const day = current && new Date(currentTrack?.frontmatter?.publicationDate)
 
-  console.log('currentTrack?.frontmatter.size', currentTrack && currentTrack.frontmatter)
-
   return (
     <>
-      {currentTrack && currentTrack.frontmatter.size !== 0 && (
-        <div className="bg-secondary fixed w-screen -inset-x-0 bottom-0 p-2 border-solid border-black border-t-2 shadow-md">
-          <div className="relative max-w-4xl mx-auto">
-            <div className="flex flex-col mb-1 mx-4 md:flex-row">
-              {currentTrack?.fields?.slug && (
-                <LinkCustom href={currentTrack?.fields?.slug}>
-                  {currentTrack?.frontmatter.title}
-                </LinkCustom>
-              )}
+      <div className="bg-secondary fixed w-screen -inset-x-0 bottom-0 p-2 border-solid border-black border-t-2 shadow-md">
+        <div className="relative max-w-4xl mx-auto">
+          <div className="flex flex-col mb-1 mx-4 md:flex-row">
+            {currentTrack?.fields?.slug && (
+              <LinkCustom href={currentTrack?.fields?.slug}>
+                {currentTrack?.frontmatter.title}
+              </LinkCustom>
+            )}
 
-              <p className="md:ml-auto">{day?.toLocaleDateString('fr-FR', options)}</p>
-            </div>
-            <audio
-              preload="none"
-              ref={player}
-              controls
-              style={{
-                display: 'none',
-              }}
-            >
-              <source src={currentTrack?.frontmatter.url} type="audio/mp3" />
-            </audio>
+            <p className="md:ml-auto">{day?.toLocaleDateString('fr-FR', options)}</p>
           </div>
+          <audio
+            preload="none"
+            ref={player}
+            controls
+            style={{
+              display: 'none',
+            }}
+          >
+            <source src={currentTrack?.frontmatter.url} type="audio/mp3" />
+          </audio>
         </div>
-      )}
+      </div>
     </>
   )
 }
