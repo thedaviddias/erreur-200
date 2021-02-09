@@ -14,7 +14,7 @@ const config = {
   userEmail: "info@erreur200.com", // Email used for RSS feed's author segment
   userTwitter: "erreur200", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Toronto, Canada", // User location to display in the author segment.
-  userAvatar: "https://erreur200.com/logos/erreur-200.png", // User avatar to display in the author segment.
+  userAvatar: "https://erreur200.com/assets/avatar-placeholder.jpg", // User avatar to display in the author segment.
   userDescription: "Erreur 200 est un podcast pour les développeurs web du monde francophone.",
   copyright: "Erreur 200 © 2021", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#b12518ff", // Used for setting manifest and progress theme colors.
