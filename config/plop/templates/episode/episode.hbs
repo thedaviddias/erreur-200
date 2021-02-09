@@ -3,13 +3,13 @@ type: podcast-episode
 guid: Generate with https://passwordsgenerator.net/GUID-Generator/
 episodeNumber: {{ properCase episodeNumber }}
 season: 1
-title: {{ properCase name }}
+title: '{{ properCase episodeNumber }}: {{ properCase name }}'
 slug: {{ kebabCase name }}
 subtitle:
 publicationDate: 2021-01-01
 url: https://erreur200.s3.eu-west-3.amazonaws.com/00{{ properCase episodeNumber }}{{ kebabCase name }}.mp3
 status: published
-author: Erreur 200
+author: David Dias & Jean-Rémy Duboc
 episodeType: full
 size: 000
 duration: 000
@@ -29,6 +29,3 @@ Dans ce ___ épisode...
 
 * [Premier lien](https://erreur200.com)
 
-##
-
-* Assurez-vous de rajouter @erreur200 à vos tweets!
