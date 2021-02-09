@@ -54,13 +54,11 @@ export const EpisodesProvider: React.FC = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   useEffect(() => {
-    if (podcastEpisodes.edges.length) {
-      dispatch({ type: 'setPodcasts', payload: podcastEpisodes.edges })
-      dispatch({
-        type: 'initCurrent',
-        payload: podcastEpisodes.edges[0].node.id,
-      })
-    }
+    dispatch({ type: 'setPodcasts', payload: podcastEpisodes.edges })
+    dispatch({
+      type: 'initCurrent',
+      payload: podcastEpisodes.edges[0].node.id,
+    })
   }, [podcastEpisodes])
 
   return <EpisodesContext.Provider value={{ state, dispatch }}>{children}</EpisodesContext.Provider>
