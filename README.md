@@ -5,7 +5,7 @@
 
 # Latests Podcast Episodes
 <!-- BLOG-POST-LIST:START -->
-- [00 - Prologue](https://erreur200.com/prologue)
+- [00: Prologue](https://erreur200.com/prologue)
 <!-- BLOG-POST-LIST:END -->
 
 ## Create a new episode
