@@ -18,7 +18,7 @@ categories:
   - Technology
 ---
 
-> Dans cet épisode numéro zéro, David et Jean-Rémy présentent leur nouveau podcast "Erreur 200". Qui ils sont, les raisons qui les ont motivé à lancer ce projet et qu'est-ce qui vous attends dans les prochains épisodesgatsby!
+> Dans cet épisode numéro zéro, David et Jean-Rémy présentent leur nouveau podcast "Erreur 200". Qui ils sont, les raisons qui les ont motivé à lancer ce projet et qu'est-ce qui vous attends dans les prochains épisodes!
 
 ## Notes de l'épisode
 
