@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/thedaviddias/erreur-200/compare/v1.1.1...v1.2.0) (2021-02-11)
+
+
+### Features
+
+* add podcast sources ([#5](https://github.com/thedaviddias/erreur-200/issues/5)) ([c222c96](https://github.com/thedaviddias/erreur-200/commit/c222c964883a99cf103d79679c4bd2d4b4fecba4))
+
 ## [1.1.1](https://github.com/thedaviddias/erreur-200/compare/v1.1.0...v1.1.1) (2021-02-09)
 
 
