@@ -6,11 +6,12 @@ import { LinkCustom } from '..'
 
 export const Platforms: React.FC = () => {
   const rssUrl = 'https://erreur200.com/rss.xml'
-  const applePodcastUrl = 'https://podcasts.apple.com/'
-  const spotifyUrl = 'https://open.spotify.com/'
-  const googlePodcastUrl = 'https://podcasts.google.com/'
-  const overcastUrl = 'https://overcast.fm/'
-  const youtubeUrl = 'https://www.youtube.com/'
+  const applePodcastUrl = 'https://apple.co/2NfLQ0b'
+  const spotifyUrl = 'https://open.spotify.com/show/5vlkaq2mJ3niIkkmUcrXfS'
+  const googlePodcastUrl =
+    'https://podcasts.google.com/feed/aHR0cHM6Ly9lcnJldXIyMDAuY29tL3Jzcy54bWw'
+  const overcastUrl = 'https://overcast.fm/itunes1552950061/erreur-200'
+  const youtubeUrl = 'https://www.youtube.com/channel/UCTLypL9bzracOKBmqYSwlPQ'
   const discordUrl = 'https://discord.gg/szWshKqYDj'
 
   return (
