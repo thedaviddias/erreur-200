@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/thedaviddias/erreur-200/compare/v1.2.0...v1.3.0) (2021-02-16)
+
+
+### Features
+
+* add episode 01 about teletravail ([#6](https://github.com/thedaviddias/erreur-200/issues/6)) ([ab6f1d8](https://github.com/thedaviddias/erreur-200/commit/ab6f1d8bc4f050411c9059263db8bb1568738167))
+
 # [1.2.0](https://github.com/thedaviddias/erreur-200/compare/v1.1.1...v1.2.0) (2021-02-11)
 
 
