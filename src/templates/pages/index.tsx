@@ -16,7 +16,7 @@ const Page: React.FC = ({ data }) => {
         description={description && description !== '' ? description : mdx.excerpt}
         isDefault
       />
-      {isHome && <h1 className="sr-only">List des épisodes du podcast Erreur 200</h1>}
+      {isHome && <h1 className="sr-only">Liste des épisodes du podcast Erreur 200</h1>}
       <MDXRenderer>{mdx.body}</MDXRenderer>{' '}
     </>
   )
