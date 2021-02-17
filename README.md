@@ -5,6 +5,7 @@
 
 # Latests Podcast Episodes
 <!-- BLOG-POST-LIST:START -->
+- [01: Le télétravail pour les développeurs web](https://erreur200.com/teletravail-developpeurs-web-bonheur-galere)
 - [00: Prologue](https://erreur200.com/prologue)
 <!-- BLOG-POST-LIST:END -->
 
