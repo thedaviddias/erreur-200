@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/thedaviddias/erreur-200/compare/v1.3.0...v1.4.0) (2021-03-17)
+
+
+### Features
+
+* add episode 3 with Matthieu Cneude ([#7](https://github.com/thedaviddias/erreur-200/issues/7)) ([0952649](https://github.com/thedaviddias/erreur-200/commit/0952649b1880e8b1e24266544719973ff2e1b2a5))
+
 # [1.3.0](https://github.com/thedaviddias/erreur-200/compare/v1.2.0...v1.3.0) (2021-02-16)
 
 
