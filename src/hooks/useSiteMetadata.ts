@@ -16,7 +16,6 @@ interface IUseSiteMetadata {
   userEmail: string
   userTwitter: string
   userLocation: string
-  userAvatar: string
   userDescription: string
   copyright: string
   themeColor: string
@@ -48,7 +47,6 @@ export const useSiteMetadata = (): IUseSiteMetadata => {
           userEmail
           userTwitter
           userLocation
-          userAvatar
           userDescription
           copyright
           themeColor
