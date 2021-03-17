@@ -19,11 +19,13 @@ export const Hosts: React.FC = () => {
         return (
           <div className="max-w-xs my-3" key={uuid()}>
             <div className="flex justify-center">
-              <Img
-                className="rounded-full border-solid border-white border-2"
-                fixed={image.childImageSharp.fixed}
-                alt={name}
-              />
+              {image && (
+                <Img
+                  className="rounded-full border-solid border-white border-2"
+                  fixed={image.childImageSharp.fixed}
+                  alt={name}
+                />
+              )}
             </div>
             <div className="text-center px-3 pb-6 pt-2">
               <p className="text-white text-l md:text-xl bold font-sans">{name}</p>
