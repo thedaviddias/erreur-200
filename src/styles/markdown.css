@@ -107,3 +107,17 @@
 .markdown p:first-child {
   @apply mb-6 text-base italic md:text-xl;
 }
+
+code{
+  color: #aaa;
+}
+
+pre {
+  font-size: 20px;
+  border-color: rgba(245, 158, 11, var(--tw-text-opacity));
+  border-width: 1px;
+  border-left-width: 10px;
+  border-radius: 5px;
+  padding: 14px;
+  background: #323e4c;
+}
