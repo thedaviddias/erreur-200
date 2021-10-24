@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/thedaviddias/erreur-200/compare/v1.4.0...v1.5.0) (2021-10-24)
+
+
+### Features
+
+* **Episode 3:** La Jamstack ([#9](https://github.com/thedaviddias/erreur-200/issues/9)) ([c7d80eb](https://github.com/thedaviddias/erreur-200/commit/c7d80eb3a36ef0699c5ca812278e2bc938d51238))
+
 # [1.4.0](https://github.com/thedaviddias/erreur-200/compare/v1.3.0...v1.4.0) (2021-03-17)
 
 
