@@ -3,25 +3,25 @@ type: podcast-episode
 guid: adf9983d-9c31-484c-9d4b-bfe52b0bbb66
 episodeNumber: 03
 season: 1
-title: '03 : LaJamStack'
-slug: 03-la-jam-stack
-subtitle: Dans cet épisode nous faisons une vue d'ensemble de la JamStack (JavaScript, APIs, and Markup), un manière moderne de concevoir les applications web.
+title: '03: La Jamstack'
+slug: la-jamstack
+subtitle: Dans cet épisode nous faisons une vue d'ensemble de la Jamstack (JavaScript, APIs, and Markup), un manière moderne de concevoir les applications web.
 publicationDate: 2021-05-10
-url: https://erreur200.s3.eu-west-3.amazonaws.com/000303-la-jam-stack.mp3
+url: https://erreur200.s3.eu-west-3.amazonaws.com/03-la-jamstack.mp3
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 size: 000
-duration: 000
+duration: 1765
 explicit: false
 categories:
   - API
   - Programmation
   - Web
-  - JamStack
+  - Jamstack
 ---
 
-Dans cet épisode nous faisons une vue d'ensemble de la JamStack (JavaScript, APIs, and Markup), un manière moderne de concevoir les applications web, pour de meilleurs performances et une grand flexibilité.
+Dans cet épisode nous faisons une vue d'ensemble de la Jamstack (JavaScript, APIs, and Markup), un manière moderne de concevoir les applications web, pour de meilleurs performances et une grand flexibilité.
 
 ## Notes de l'épisode
 
@@ -31,7 +31,7 @@ Dans cet épisode nous faisons une vue d'ensemble de la JamStack (JavaScript, AP
     - JavaScript pour les fonctions dynamiques connections
     - APIs pour les fonction servers
     - Markup - présentation
-    
+
 
 ### Comment ça marche?
 
@@ -42,7 +42,7 @@ La différence est que le markup
 
 Servis sur une application, mobile, TV, montre
 
-### Pourquoi choisir le JamStack ?
+### Pourquoi choisir le Jamstack ?
 
 #### Les avantages
 
@@ -63,7 +63,7 @@ Servis sur une application, mobile, TV, montre
 
 
 ## Liens
-* [What is JamStack?](https://jamstack.org/what-is-jamstack/)
+* [What is Jamstack?](https://jamstack.org/what-is-jamstack/)
 * [Le CMS Contentful](https://www.contentful.com/)
-* [JamStack Paris](https://jamstack.paris/)
+* [Jamstack Paris](https://jamstack.paris/)
 * [What to Expect from the JAMstack in 2020 - Chris Coyier](https://www.stackbit.com/blog/jamstack-2020-chris-coyier/)
