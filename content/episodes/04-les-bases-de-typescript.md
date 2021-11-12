@@ -6,7 +6,7 @@ season: 1
 title: '04: Les bases de TypeScript'
 slug: les-bases-de-typescript
 subtitle: Dans cet épisode David et Jean-Rémy explorent les bases de TypeScript, un sur-ensemble de JavaScript avec plein de fonctionalités super utile pour un code propre, flexible et rigoureux.
-publicationDate: 2021-09-15
+publicationDate: 2021-11-12
 url: https://erreur200.s3.eu-west-3.amazonaws.com/04-les-bases-de-typescript.mp3
 status: published
 author: David Dias & Jean-Rémy Duboc
