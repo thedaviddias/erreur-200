@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/thedaviddias/erreur-200/compare/v1.5.0...v1.6.0) (2021-11-12)
+
+
+### Features
+
+* **Episode 4:** TypeScript ([#8](https://github.com/thedaviddias/erreur-200/issues/8)) ([a10a1f0](https://github.com/thedaviddias/erreur-200/commit/a10a1f05b6e944eb0523020bfc64655e66ccdda3))
+
 # [1.5.0](https://github.com/thedaviddias/erreur-200/compare/v1.4.0...v1.5.0) (2021-10-24)
 
 
