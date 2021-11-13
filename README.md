@@ -5,6 +5,7 @@
 
 # Latests Podcast Episodes
 <!-- BLOG-POST-LIST:START -->
+- [04: Les bases de TypeScript](https://erreur200.com/les-bases-de-typescript)
 - [03: La Jamstack](https://erreur200.com/la-jamstack)
 - [02: Matthieu Cneude, le développeur Mouseless immigré à Berlin](https://erreur200.com/matthieu-cneude-developpeur-mouseless-immigre-berlin)
 - [01: Le télétravail pour les développeurs web](https://erreur200.com/teletravail-developpeurs-web-bonheur-galere)
