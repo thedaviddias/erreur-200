@@ -3,7 +3,7 @@ type: podcast-episode
 guid: A82EF94B-A8DA-D30E-C716-21B13C2FC6AD 
 episodeNumber: 5
 season: 1
-title: '05: Comment devenir un développeur web en 2022'
+title: '05: Comment devenir un développeur web en 2022 (1)'
 slug: devenir-developpeur-web-2022-1 
 Subtitle: Dans cet épisode David et Jean-Rémy partagent les astuces pour apprendre à coder, promouvoir son travail et devenir un pro du web en 2022!
 publicationDate: 2022-01-01
@@ -12,7 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 size: 000
-duration: 000
+duration: 2768
 explicit: false
 categories:
   - Code
@@ -29,16 +29,16 @@ Dans cet épisode David et Jean-Rémy partagent les astuces pour apprendre à co
 
 Pour demander à David de vous guider dans le monde du web:
 
-- [ADP LIST - David Dias](https://adplist.org/mentors/david-dias)
+- [ADPList - David Dias](https://adplist.org/mentors/david-dias)
 - [MyJobGlasses - David Dias](https://ddias.run/myjobglasses)
 
-Les profiles de David sur les médias sociaux:
+Les profils de David sur les médias sociaux:
 
 - [Site Personnel - The David Dias](https://thedaviddias.dev/)
 - [Twitter](https://twitter.com/TheDavidDias)
 - [LinkedIn](https://www.linkedin.com/in/thedaviddias/)
 
-Les profiles de Jean-Rémy sur les médias sociaux:
+Les profils de Jean-Rémy sur les médias sociaux:
 
 - [Hashnode](https://dataille.hashnode.dev/)
 - [Twitter](https://twitter.com/JeanRemyDuboc)
