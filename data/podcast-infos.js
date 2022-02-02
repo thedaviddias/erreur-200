@@ -8,7 +8,7 @@ module.exports = {
   imageUrl: `https://erreur200.com/assets/erreur-200-podcast-artwork.jpg`,
   feedUrl: `https://erreur200.com/rss.xml`,
   language: `fr-FR`,
-  copyright: `Copyright © 2021 Erreur 200`,
+  copyright: `Copyright © 2022 Erreur 200`,
   authorName: `David Dias & Jean-Rémy Duboc`,
   ownerName: `Erreur 200`,
   ownerEmail: `info@erreur200.com`,
