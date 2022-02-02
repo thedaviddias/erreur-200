@@ -53,20 +53,20 @@ jobs:
       #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
 
-      - name: 💬 Send Message to Slack
-        uses: 8398a7/action-slack@v3
-        with:
-          status: custom
-          fields: workflow,job,commit,repo,ref,author,took
-          custom_payload: |
-            {
-              username: 'development-workflow',
-              icon_emoji: ':octocat:',
-              attachments: [{
-                color: '${{ job.status }}' === 'success' ? 'good' : '${{ job.status }}' === 'failure' ? 'danger' : 'warning',
-                text: `${process.env.AS_WORKFLOW}\n${process.env.AS_JOB}`
-              }]
-            }
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      # - name: 💬 Send Message to Slack
+      #   uses: 8398a7/action-slack@v3
+      #   with:
+      #     status: custom
+      #     fields: workflow,job,commit,repo,ref,author,took
+      #     custom_payload: |
+      #       {
+      #         username: 'development-workflow',
+      #         icon_emoji: ':octocat:',
+      #         attachments: [{
+      #           color: '${{ job.status }}' === 'success' ? 'good' : '${{ job.status }}' === 'failure' ? 'danger' : 'warning',
+      #           text: `${process.env.AS_WORKFLOW}\n${process.env.AS_JOB}`
+      #         }]
+      #       }
+      #   env:
+      #     GITHUB_TOKEN: ${{ github.token }}
+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
