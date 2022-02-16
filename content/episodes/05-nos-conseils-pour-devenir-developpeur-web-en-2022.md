@@ -3,7 +3,7 @@ type: podcast-episode
 guid: A82EF94B-A8DA-D30E-C716-21B13C2FC6AD
 episodeNumber: 5
 season: 1
-title: '05: Comment devenir un développeur web en 2022 (1)'
+title: 'Comment devenir un développeur web en 2022 (1)'
 slug: devenir-developpeur-web-2022-1
 Subtitle: Dans cet épisode David et Jean-Rémy partagent les astuces pour apprendre à coder, promouvoir son travail et devenir un pro du web en 2022!
 publicationDate: 2022-02-01

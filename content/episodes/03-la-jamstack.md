@@ -3,7 +3,7 @@ type: podcast-episode
 guid: adf9983d-9c31-484c-9d4b-bfe52b0bbb66
 episodeNumber: 03
 season: 1
-title: '03: La Jamstack'
+title: 'La Jamstack'
 slug: la-jamstack
 subtitle: Dans cet épisode nous faisons une vue d'ensemble de la Jamstack (JavaScript, APIs, and Markup), un manière moderne de concevoir les applications web.
 publicationDate: 2021-05-10

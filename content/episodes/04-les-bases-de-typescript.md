@@ -3,7 +3,7 @@ type: podcast-episode
 guid: 0c5b5222-03fd-421d-a714-4f9cfd844f98
 episodeNumber: 4
 season: 1
-title: '04: Les bases de TypeScript'
+title: 'Les bases de TypeScript'
 slug: les-bases-de-typescript
 subtitle: Dans cet épisode David et Jean-Rémy explorent les bases de TypeScript, un sur-ensemble de JavaScript avec plein de fonctionalités super utile pour un code propre, flexible et rigoureux.
 publicationDate: 2021-11-12

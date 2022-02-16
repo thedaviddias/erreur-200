@@ -3,7 +3,7 @@ type: podcast-episode
 guid: 31EC51CF-7E0C-5C25-D0E8-F78B8CBC8D7E
 episodeNumber: 2
 season: 1
-title: '02: Matthieu Cneude, le développeur Mouseless immigré à Berlin'
+title: 'Matthieu Cneude, le développeur Mouseless immigré à Berlin'
 slug: matthieu-cneude-developpeur-mouseless-immigre-berlin
 subtitle: Dans cet épisode d'Erreur 200, Matthieu Cneude, immigré à Berlin et auteur du livre "The Mouseless Dev" nous invite à découvrir son parcours de développeur avec ses défis et ses réussites.
 publicationDate: 2021-03-16
