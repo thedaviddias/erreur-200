@@ -27,4 +27,6 @@
     "node_modules",
     ".git",
   ],
+  "frontMatter.content.fmHighlight": true,
+  "frontMatter.content.autoUpdateDate": false,
 }
