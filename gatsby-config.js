@@ -24,8 +24,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        googleAnalytics: {
-          trackingId: config.googleAnalyticsID,
+        googleTagManager: {
+          trackingId: config.GTMTrackingID,
+          dataLayerName: 'dataLayer', // default
         },
         defaultLang: 'fr'
       },

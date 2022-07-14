@@ -7,7 +7,7 @@ const config = {
   siteUrl: process.env.ROOT_URL || "https://erreur200.com", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "Erreur 200 est un podcast dédié aux gens qui font le web. Animé par deux développeurs français, l'un vivant au Canada, l'autre en Angleterre, nous échangeons sur le web d'aujourd'hui et de demain. ", // Website description used for RSS feeds/meta description tag.
-  googleAnalyticsID: "G-1K83YYJLKD",
+  GTMTrackingID: "GTM-P63722Z",
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
   userName: "Erreur 200", // Username to display in the author segment.
