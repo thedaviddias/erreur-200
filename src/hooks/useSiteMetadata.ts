@@ -9,7 +9,7 @@ interface IUseSiteMetadata {
   siteUrl: string
   pathPrefix: string
   siteDescription: string
-  googleAnalyticsID: string
+  GTMTrackingID: string
   dateFromFormat: string
   dateFormat: string
   userName: string
@@ -40,7 +40,7 @@ export const useSiteMetadata = (): IUseSiteMetadata => {
           siteUrl
           pathPrefix
           siteDescription
-          googleAnalyticsID
+          GTMTrackingID
           dateFromFormat
           dateFormat
           userName
