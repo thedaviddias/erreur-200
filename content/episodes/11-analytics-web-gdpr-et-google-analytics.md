@@ -6,13 +6,13 @@ season: 1
 title: 'Analytics Web, GDPR et Google Analytics'
 slug: analytics-web-gdpr-et-google-analytics
 subtitle:
-publicationDate: 2022-08-01
-url: https://erreur200.s3.eu-west-3.amazonaws.com/0011analytics-web-gdpr-et-google-analytics.mp3
+publicationDate: 2023-04-23
+url: https://erreur200.s3.eu-west-3.amazonaws.com/11-analytics-web-gdpr-et-google-analytics.mp3
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 size: 000
-duration: 3151
+duration: 3180
 explicit: false
 categories:
   - Analytics
