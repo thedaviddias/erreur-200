@@ -21,12 +21,9 @@
     "CODE_OF_CONDUCT": true,
     "CONTRIBUTING": true,
     "LICENCE": true,
-    ".cache": true
+    ".cache": true,
+    "rss.xml": true,
   },
-  "cSpell.ignorePaths": [
-    "node_modules",
-    ".git",
-  ],
   "frontMatter.content.fmHighlight": true,
   "frontMatter.content.autoUpdateDate": false,
 }

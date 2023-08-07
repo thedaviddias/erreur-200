@@ -1,11 +1,11 @@
 ---
-type: podcast-episode
+type: Podcast
 guid: 7b5b630c-80aa-4c9f-9205-e271a6c69295
 episodeNumber: 10
 season: 1
 title: 'Questions de débutants en développement web avec Killian Vaillant'
 slug: questions-de-debutants-en-developpement-web-avec-killian-vaillant
-subtitle:
+description: Dans cet épisode, nous rencontrons Killian Vaillant, une jeune développeur qui commence bientôt une formation.
 publicationDate: 2022-10-04
 url: https://erreur200.s3.eu-west-3.amazonaws.com/10-questions-de-debutants-en-developpement-web-killian-vaillant.mp3
 status: published
@@ -26,7 +26,6 @@ N'hésitez pas, vous aussi, à nous contacter si vous souhaitez faire parti d'un
 
 ## Liens
 
-* [The Hacking Project](https://www.thehackingproject.org/)
-* [Twitter de Killian Vaillant](https://twitter.com/killianvlt)
-* [École O'Clock](https://oclock.io/)
-
+- [The Hacking Project](https://www.thehackingproject.org/)
+- [Twitter de Killian Vaillant](https://twitter.com/killianvlt)
+- [École O'Clock](https://oclock.io/)
