@@ -11,16 +11,7 @@ url: https://erreur200.s3.eu-west-3.amazonaws.com/11-analytics-web-gdpr-et-googl
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
-size: 000
 duration: 3180
-explicit: false
-categories:
-  - Analytics
-  - Privacy
-  - Vie privée
-  - GDPR
-  - GRPD
-  - Google Analytics
 ---
 
 Dans cet épisode, Jean-Rémy nous explique les bases de l'analytics web, du tagging (ou balisage) de sites et autres application à Google Analytics, en passant par la loi GRPD et ses implications.

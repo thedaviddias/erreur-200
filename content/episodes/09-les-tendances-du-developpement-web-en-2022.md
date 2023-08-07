@@ -11,14 +11,7 @@ url: https://erreur200.s3.eu-west-3.amazonaws.com/09-les-tendances-du-developpem
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
-size: 000
 duration: 3240
-explicit: false
-categories:
-  - Internet
-  - Sondage
-  - JavaScript
-  - Web
 ---
 
 Dans ce 9ème épisode, nous décortiquons les résultats du sondage "State of JavaScript 2021" publié en Février 2022. 15 développeurs du monde entier ont partagé les outils et frameworks qu'ils utilisent et qu'ils préfèrent. Parmi ces dernières, Vite, Next.js, Cypress et bien d'autre restent au top du classement.

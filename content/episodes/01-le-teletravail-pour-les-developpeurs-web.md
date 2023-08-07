@@ -11,11 +11,7 @@ url: https://erreur200.s3.eu-west-3.amazonaws.com/01-le-teletravail-chez-les-dev
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
-size: 43000
 duration: 2160
-explicit: false
-categories:
-  - Technology
 ---
 
 Dans cet épisode, David et Jean-Rémy abordent la thématique du télétravail en partageant leur expérience de développeur web. En comparant la France au Canada et à l'Angleterre, ils mettent en avant les avantages que le télétravail apportent aux entreprises d'aujourd'hui.

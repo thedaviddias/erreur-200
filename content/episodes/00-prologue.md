@@ -11,11 +11,7 @@ url: https://erreur200.s3.eu-west-3.amazonaws.com/00-prologue.mp3
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
-size: 848000
 duration: 627
-explicit: false
-categories:
-  - Technology
 ---
 
 > Dans cet épisode numéro zéro, David et Jean-Rémy présentent leur nouveau podcast "Erreur 200". Qui ils sont, les raisons qui les ont motivé à lancer ce projet et qu'est-ce qui vous attends dans les prochains épisodes!

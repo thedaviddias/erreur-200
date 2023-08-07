@@ -11,16 +11,7 @@ url: https://erreur200.s3.eu-west-3.amazonaws.com/04-les-bases-de-typescript.mp3
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
-size: 47258
 duration: 2467
-explicit: false
-categories:
-  - Code
-  - JavaScript
-  - TypeScript
-  - Variables
-  - Fonctions
-  - Web development
 ---
 
 Dans cet épisode David et Jean-Rémy explorent les bases de TypeScript, un sur-ensemble de JavaScript avec plein de fonctionalités super utile pour un code propre, flexible et rigoureux.

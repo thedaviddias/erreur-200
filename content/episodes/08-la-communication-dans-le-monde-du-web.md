@@ -11,14 +11,7 @@ url: https://erreur200.s3.eu-west-3.amazonaws.com/08-la-communication-dans-le-mo
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
-size: 000
 duration: 3373
-explicit: false
-categories:
-  - Internet
-  - Équipe
-  - Communication
-  - Web
 ---
 
 Dans cet épisode numéro 8, nous explorons les défis que représente la communication au sein des entreprises technologiques. Nous revenons sur les outils qui peuvent aider à améliorer les échanges et les bonnes pratiques dans le domaine. N'hésitez pas à nous faire parvenir vos retours, nos sommes friand de savoir ce que vous en pensez!

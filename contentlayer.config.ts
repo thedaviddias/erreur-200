@@ -25,10 +25,7 @@ export const Episodes = defineDocumentType(() => ({
       options: ['full', 'trailer', 'bonus'],
       required: true,
     },
-    size: { type: 'number', required: true },
     duration: { type: 'number', required: true },
-    explicit: { type: 'boolean', required: true },
-    categories: { type: 'list', of: { type: 'string' }, required: true },
   },
 }))
 

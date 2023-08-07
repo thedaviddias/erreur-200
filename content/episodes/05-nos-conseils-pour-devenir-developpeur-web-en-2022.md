@@ -11,16 +11,7 @@ url: https://erreur200.s3.eu-west-3.amazonaws.com/05-conseils-devenir-developpeu
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
-size: 000
 duration: 2768
-explicit: false
-categories:
-  - Code
-  - JavaScript
-  - TypeScript
-  - Variables
-  - Fonctions
-  - Web development
 ---
 
 Dans cet épisode David et Jean-Rémy partagent les astuces pour apprendre à coder, promouvoir son travail et devenir un pro du web en 2022!

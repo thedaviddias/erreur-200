@@ -11,14 +11,7 @@ url: https://erreur200.s3.eu-west-3.amazonaws.com/07-apprentissage-veille-techno
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
-size: 000
 duration: 3074
-explicit: false
-categories:
-  - Internet
-  - Apprentissage
-  - Web
-  - Veille technologique
 ---
 
 Dans ce nouvel épisode, nous vous partageons nos astuces pour "rester développeur web". Comment apprendre en continue et avoir l'habitude de se former et de se tenir au courant.

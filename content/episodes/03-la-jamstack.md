@@ -11,14 +11,7 @@ url: https://erreur200.s3.eu-west-3.amazonaws.com/03-la-jamstack.mp3
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
-size: 000
 duration: 1765
-explicit: false
-categories:
-  - API
-  - Programmation
-  - Web
-  - Jamstack
 ---
 
 Dans cet épisode nous faisons une vue d'ensemble de la Jamstack (JavaScript, APIs, and Markup), un manière moderne de concevoir les applications web, pour de meilleurs performances et une grand flexibilité.

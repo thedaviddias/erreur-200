@@ -11,11 +11,7 @@ url: https://erreur200.s3.eu-west-3.amazonaws.com/02-matthieu-cneude-berlin.mp3
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
-size: 000
 duration: 2535
-explicit: false
-categories:
-  - Internet
 ---
 
 Dans ce deuxième épisode du podcast "Erreur 200", nous partons à Berlin, en Allemagne, pour rencontrer Matthieu Cneude, autheur du livre "The Mouseless Dev".
