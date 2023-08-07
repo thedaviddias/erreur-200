@@ -1,42 +1,38 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./src/**/*.{ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./src/**/*.{ts,tsx}'],
   theme: {
-    borderColor: theme => ({
-      ...theme('colors'),
-      'primary': '#1a2940ff',
-      'primaryDark': '#172130',
-      'secondary': '#b12518ff',
-      'tertiary': theme('colors.yellow.500')
-     }),
-    backgroundColor: theme => ({
-      ...theme('colors'),
-      'primary': '#1a2940ff',
-      'secondary': '#b12518ff',
-      'tertiary': theme('colors.yellow.500'),
-      'twitter': '#1DA1F2'
-    }),
-    textColor: theme => ({
-      ...theme('colors'),
-      'primary': '#1a2940ff',
-      'secondary': '#b12518ff',
-      'tertiary': theme('colors.yellow.500')
-    }),
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Satoshi', ...defaultTheme.fontFamily.sans],
+      },
+      spacing: {
+        18: '4.5rem',
+        112: '28rem',
+        120: '30rem',
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              color: theme('colors.light-gray'),
+              textDecoration: 'underline',
+            },
+          },
+        },
+      }),
+      colors: {
+        'primary-dark': '#1a2940',
+        'secondary-dark': '#0f172a',
+        'accent-red': '#e63946',
+        'accent-gray': '#374151',
+        'light-gray': '#d1d5db',
+        'border-dark': '#2d3748',
+        'white': '#ffffff'
+      }
+    },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
-
-
-/* SCSS HEX */
-// $international-orange-engineering: #b12518ff;
-// $oxford-blue: #1a2940ff;
-// $pacific-blue: #47a8bdff;
-// $corn: #f5e663ff;
-// $rajah: #ffad69ff;
-
-
-// divide-yellow-500

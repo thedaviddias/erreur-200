@@ -1,11 +1,11 @@
 ---
-type: podcast-episode
+type: Podcast
 guid: a11faab7-c04a-4bcc-85c3-d42d5f5fbcc4
 episodeNumber: 6
 season: 1
 title: 'Comment devenir un développeur web en 2022 (2)'
 slug: devenir-developpeur-web-2022-2
-Subtitle: Dans cet épisode David et Jean-Rémy vous partagent la suite de leurs astuces pour rédiger un CV, trouver un travail dans développement web et le garder en 2022!
+description: Dans cet épisode David et Jean-Rémy vous partagent la suite de leurs astuces pour rédiger un CV, trouver un travail dans développement web et le garder en 2022!
 publicationDate: 2022-02-15
 url: https://erreur200.s3.eu-west-3.amazonaws.com/06-conseils-devenir-developpeur-web-2022-2.mp3
 status: published
