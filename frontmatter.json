@@ -1,3 +1,107 @@
 {
-  "$schema": "https://frontmatter.codes/frontmatter.schema.json"
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "next",
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.framework.startCommand": "npm run dev",
+  "frontMatter.preview.host": "http://localhost:3000",
+  "frontMatter.git.enabled": true,
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Podcast",
+      "path": "[[workspace]]/content/episodes/{{episodeNumber}}-{{slug}}",
+      "contentTypes": [
+        "Podcast"
+      ]
+    }
+  ],
+  "frontMatter.content.draftField": {
+    "name": "status",
+    "type": "choice",
+    "choices": [
+      "draft",
+      "archived",
+      "published"
+    ]
+  },
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "Podcast",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "title": "guid",
+          "name": "guid",
+          "type": "string"
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "slug",
+          "editable": true,
+          "default": "{{slug}}"
+        },
+        {
+          "title": "episodeNumber",
+          "name": "episodeNumber",
+          "type": "number"
+        },
+        {
+          "title": "season",
+          "name": "season",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "publicationDate",
+          "name": "publicationDate",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "url",
+          "name": "url",
+          "type": "string",
+          "default": "https://erreur200.s3.eu-west-3.amazonaws.com/"
+        },
+        {
+          "title": "author",
+          "name": "author",
+          "type": "string"
+        },
+        {
+          "title": "episodeType",
+          "name": "episodeType",
+          "type": "string",
+          "default": "full"
+        },
+        {
+          "title": "duration",
+          "name": "duration",
+          "type": "number"
+        },
+        {
+          "title": "status",
+          "name": "status",
+          "type": "string",
+          "default": "draft"
+        }
+      ]
+    }
+  ]
 }
