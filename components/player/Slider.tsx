@@ -138,7 +138,7 @@ export function Slider(props) {
             state.getThumbMaxValue(0) === 0 && 'opacity-0',
             isFocusVisible || state.isThumbDragging(0)
               ? 'bg-slate-100 text-white'
-              : 'text-slate-500'
+              : 'text-accent-gray'
           )}
         >
           {formatTime(currentTime, totalTime)}
@@ -148,7 +148,7 @@ export function Slider(props) {
         </span>
         <span
           className={clsx(
-            'hidden rounded-md px-1 py-0.5 font-mono text-sm leading-6 text-slate-500 md:block',
+            'hidden rounded-md px-1 py-0.5 font-mono text-sm leading-6 text-accent-gray md:block',
             state.getThumbMaxValue(0) === 0 && 'opacity-0'
           )}
         >

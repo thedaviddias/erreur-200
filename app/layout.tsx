@@ -68,7 +68,7 @@ export default async function RootLayout({
       </head>
       <link
         rel="icon"
-        href="../images/icons/favicon-32x32.png"
+        href="../public/images/icons/favicon-32x32.png"
         type="image/png"
         sizes="32x32"
       />

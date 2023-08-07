@@ -2,7 +2,10 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{ts,tsx}'],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -26,8 +29,8 @@ module.exports = {
       colors: {
         'primary-dark': '#1a2940',
         'secondary-dark': '#0f172a',
-        'accent-red': '#e63946',
-        'accent-gray': '#374151',
+        'accent-red': '#ff6b6b',
+        'accent-gray': '#a3a3a3',
         'light-gray': '#d1d5db',
         'border-dark': '#2d3748',
         'white': '#ffffff'

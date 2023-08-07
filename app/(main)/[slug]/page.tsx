@@ -64,7 +64,7 @@ export default async function Episode({
               </h1>
               <FormattedDate
                 date={date}
-                className="order-first font-mono text-sm leading-7 text-slate-500"
+                className="order-first font-mono text-sm leading-7 text-accent-gray"
               />
             </div>
           </div>
