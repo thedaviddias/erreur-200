@@ -2,8 +2,8 @@
 
 import clsx from 'clsx'
 import { useState } from 'react'
-import david from '@/images/david-dias.png'
-import jr from '@/images/jean-remy-duboc.jpg'
+import david from '@/public/images/david-dias.png'
+import jr from '@/public/images/jean-remy-duboc.jpg'
 import Image from 'next/image'
 
 export function AboutSection(props) {

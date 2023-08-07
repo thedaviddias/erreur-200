@@ -29,7 +29,7 @@ async function EpisodeEntry({ episode }: EpisodeEntryProps) {
           </h2>
           <FormattedDate
             date={date}
-            className="order-first font-mono text-sm leading-7 text-slate-500"
+            className="order-first font-mono text-sm leading-7 text-accent-gray"
           />
           <p className="mt-1 text-base leading-7 text-light-gray">
             {episode.description}
@@ -83,7 +83,7 @@ export default async function Home() {
           Épisodes du podcast
         </h1>
       </Container>
-      <div className="divide-y border-border-dark sm:mt-4 lg:mt-8 lg:border-t lg:border-border-dark">
+      <div className="divide-y divide-border-dark border-border-dark sm:mt-4 lg:mt-8 lg:border-t lg:border-border-dark">
         {episodes?.map((episode) => (
           <EpisodeEntry key={episode.slug} episode={episode} />
         ))}
