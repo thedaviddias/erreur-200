@@ -116,7 +116,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
       <main className="border-t border-border-dark lg:relative lg:mb-28 lg:ml-112 lg:border-t-0 xl:ml-120">
         <div className="relative">{children}</div>
       </main>
-      <footer className="border-t border-border-dark bg-slate-50 py-10 pb-40 sm:py-16 sm:pb-32 lg:hidden">
+      <footer className="border-t border-border-dark bg-primary-dark py-10 pb-40 sm:py-16 sm:pb-32 lg:hidden">
         <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4">
           <AboutSection />
           <h2 className="mt-8 flex items-center font-mono text-sm font-medium leading-7 text-white">
