@@ -12,6 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 2940
+size: 0
 ---
 
 Dans cet épisode numéro 6, David et Jean-Rémy partagent leurs astuces pour bien rédiger son CV, les bons habitudes à avoir lors du passage de l'entretien mais aussi que faire après avoir enfin réussi à franchire toutes ces étapes!

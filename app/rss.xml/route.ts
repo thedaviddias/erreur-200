@@ -44,7 +44,7 @@ export async function GET() {
     itunesSubtitle: `Le podcast des gens qui font le web`,
     itunesSummary: `Le podcast dédié au web et aux gens qui tous les jours construisent Internet`,
     itunesOwner: { name: 'Erreur 200', email: 'info@erreur200.com' },
-    itunesExplicit: false,
+    itunesExplicit: false
   })
 
   for (const episode of episodes) {
@@ -62,6 +62,7 @@ export async function GET() {
       itunesEpisode: episode.episodeNumber,
       itunesEpisodeType: episode.episodeType,
       content: episode.body.html,
+      enclosure : {url: episode.url, type: 'audio/mpeg', size: episode.size}
     })
   }
 

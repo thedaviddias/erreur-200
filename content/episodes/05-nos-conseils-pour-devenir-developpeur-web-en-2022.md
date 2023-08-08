@@ -12,6 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 2768
+size: 0
 ---
 
 Dans cet épisode David et Jean-Rémy partagent les astuces pour apprendre à coder, promouvoir son travail et devenir un pro du web en 2022!

@@ -96,6 +96,11 @@
           "type": "number"
         },
         {
+          "title": "size",
+          "name": "size",
+          "type": "number"
+        },
+        {
           "title": "status",
           "name": "status",
           "type": "string",

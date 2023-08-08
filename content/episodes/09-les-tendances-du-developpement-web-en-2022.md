@@ -12,6 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 3240
+size: 0
 ---
 
 Dans ce 9ème épisode, nous décortiquons les résultats du sondage "State of JavaScript 2021" publié en Février 2022. 15 développeurs du monde entier ont partagé les outils et frameworks qu'ils utilisent et qu'ils préfèrent. Parmi ces dernières, Vite, Next.js, Cypress et bien d'autre restent au top du classement.

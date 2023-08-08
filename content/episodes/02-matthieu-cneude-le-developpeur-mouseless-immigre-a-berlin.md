@@ -12,6 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 2535
+size: 0
 ---
 
 Dans ce deuxième épisode du podcast "Erreur 200", nous partons à Berlin, en Allemagne, pour rencontrer Matthieu Cneude, autheur du livre "The Mouseless Dev".

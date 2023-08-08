@@ -26,6 +26,7 @@ export const Episodes = defineDocumentType(() => ({
       required: true,
     },
     duration: { type: 'number', required: true },
+    size: { type: 'number', required: true },
   },
 }))
 
