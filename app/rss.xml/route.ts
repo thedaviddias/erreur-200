@@ -61,6 +61,7 @@ export async function GET() {
       itunesSeason: episode.season,
       itunesEpisode: episode.episodeNumber,
       itunesEpisodeType: episode.episodeType,
+      itunesImage: 'https://erreur200.com/images/erreur-200-podcast-artwork.jpg',
       content: episode.body.html,
       enclosure : {url: episode.url, type: 'audio/mpeg', size: episode.size}
     })
