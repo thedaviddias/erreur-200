@@ -12,7 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 3373
-size: 0
+size: 129000000
 ---
 
 Dans cet épisode numéro 8, nous explorons les défis que représente la communication au sein des entreprises technologiques. Nous revenons sur les outils qui peuvent aider à améliorer les échanges et les bonnes pratiques dans le domaine. N'hésitez pas à nous faire parvenir vos retours, nos sommes friand de savoir ce que vous en pensez!

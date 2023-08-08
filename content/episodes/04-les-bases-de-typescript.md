@@ -12,7 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 2467
-size: 0
+size: 46200000
 ---
 
 Dans cet épisode David et Jean-Rémy explorent les bases de TypeScript, un sur-ensemble de JavaScript avec plein de fonctionalités super utile pour un code propre, flexible et rigoureux.

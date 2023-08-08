@@ -12,7 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 3151
-size: 0
+size: 120700000
 ---
 
 Nous avons le plaisir d'avoir Killian Vaillant comme invité. À l'âge de 24 ans et commençant bientôt sa formation web, Killian nous pose ses questions et nous partage ses doutes et ses inquiétudes. Jean-Rémy et moi-même tentons d'apporter des réponses à des questions que beaucoup d'autres jeunes développeurs se posent aussi. Comment construire son portfolio? Le travail en équipe... sont des thématiques dont on aime partager notre vision et notre expérience.

@@ -12,7 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 1765
-size: 0
+size: 31100000
 ---
 
 Dans cet épisode nous faisons une vue d'ensemble de la Jamstack (JavaScript, APIs, and Markup), un manière moderne de concevoir les applications web, pour de meilleurs performances et une grand flexibilité.

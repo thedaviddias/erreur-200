@@ -12,7 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 2160
-size: 0
+size: 34000000
 ---
 
 Dans cet épisode, David et Jean-Rémy abordent la thématique du télétravail en partageant leur expérience de développeur web. En comparant la France au Canada et à l'Angleterre, ils mettent en avant les avantages que le télétravail apportent aux entreprises d'aujourd'hui.

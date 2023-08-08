@@ -12,7 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 3074
-size: 0
+size: 117600000
 ---
 
 Dans ce nouvel épisode, nous vous partageons nos astuces pour "rester développeur web". Comment apprendre en continue et avoir l'habitude de se former et de se tenir au courant.

@@ -12,7 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 627
-size: 0
+size: 10100000
 ---
 
 > Dans cet épisode numéro zéro, David et Jean-Rémy présentent leur nouveau podcast "Erreur 200". Qui ils sont, les raisons qui les ont motivé à lancer ce projet et qu'est-ce qui vous attends dans les prochains épisodes!

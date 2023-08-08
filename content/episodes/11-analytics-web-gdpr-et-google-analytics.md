@@ -12,7 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 3180
-size: 0
+size: 53300000
 ---
 
 Dans cet épisode, Jean-Rémy nous explique les bases de l'analytics web, du tagging (ou balisage) de sites et autres application à Google Analytics, en passant par la loi GRPD et ses implications.

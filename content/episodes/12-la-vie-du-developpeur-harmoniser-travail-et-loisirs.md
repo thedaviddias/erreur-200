@@ -12,7 +12,7 @@ status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
 duration: 2584
-size: 0
+size: 98600000
 ---
 
 Dans cet épisode passionnant, on plonge dans les défis humains et techniques auxquels nous sommes confrontés chaque jour au travail. Comment les problèmes au boulot affectent-ils notre vie personnelle ? Comment trouver un équilibre sans se laisser submerger par la pression ? Rejoignez-nous alors que nous explorons ces questions et bien plus encore, partageant des expériences personnelles et des astuces pour gérer la frontière entre travail et vie privée.
