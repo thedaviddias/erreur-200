@@ -39,9 +39,16 @@ export function AboutSection(props) {
         )}
       >
         Erreur 200 est un podcast dédié aux gens qui font le web. Animé par deux
-        développeurs français, l&#39;un vivant au Canada, l&#39;autre en
-        Angleterre, nous échangeons sur le web d&#39;aujourd&#39;hui et de
-        demain. Retrouvez-nous pour discuter de code, d&#39;accessibilité, des
+        développeurs français, l&#39;un vivant au Canada (
+        <a href="https://thedaviddias.dev" className="underline">
+          David Dias
+        </a>
+        ), l&#39;autre en Angleterre (
+        <a href="https://codaille.com" className="underline">
+          Jean-Rémy Duboc
+        </a>
+        ), nous échangeons sur le web d&#39;aujourd&#39;hui et de demain.
+        Retrouvez-nous pour discuter de code, d&#39;accessibilité, des
         frameworks JavaScript, de l&#39;UX et plein d&#39;autres sujets
         passionnants. Nous laissons parfois la parole à d&#39;autres personnes
         qui partagent la même passion et qui nous parlerons de leurs échecs et

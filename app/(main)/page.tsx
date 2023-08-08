@@ -17,7 +17,7 @@ async function EpisodeEntry({ episode }: EpisodeEntryProps) {
   return (
     <article
       aria-labelledby={`episode-${episode._id}-title`}
-      className="py-10 sm:py-12"
+      className="py-8 sm:py-8"
     >
       <Container>
         <div className="flex flex-col items-start">

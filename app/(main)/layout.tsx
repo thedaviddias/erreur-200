@@ -58,7 +58,7 @@ const socialLinks: PodcastLink[] = [
     label: 'LinkedIn',
     Icon: LinkedInIcon,
     url: 'https://www.linkedin.com/company/82682070/admin/feed/posts/',
-  }
+  },
 ]
 
 export default function MainLayout({ children }: { children: ReactNode }) {
@@ -80,10 +80,10 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             ))}
           </span>
         </div>
-        <div className="relative mx-auto px-4 pb-4 pt-10 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:px-8 lg:py-5 xl:px-10">
+        <div className="relative mx-auto px-4 pb-4 pt-0 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:px-8 lg:py-5 xl:px-10">
           <Link
             href="/"
-            className="relative mx-auto block w-48 sm:w-64 lg:w-auto p-5"
+            className="relative mx-auto block w-48 p-5 sm:w-64 lg:w-auto"
             aria-label="Page d'accueil"
           >
             <Image
@@ -102,8 +102,8 @@ export default function MainLayout({ children }: { children: ReactNode }) {
               Le podcast des gens qui font le web
             </p>
           </div>
-          <AboutSection className="mt-12 hidden lg:block" />
-          <section className="mt-10 lg:mt-12">
+          <AboutSection className="mt-8 hidden lg:block" />
+          <section className="mt-10 lg:mt-8">
             <h2 className="sr-only flex items-center font-mono text-sm font-medium leading-7 text-white lg:not-sr-only">
               <span>Où nous écoutez!</span>
             </h2>
@@ -126,7 +126,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
               ))}
             </ul>
           </section>
-          <section className="mt-5 lg:mt-12">
+          <section className="mt-5 lg:mt-8">
             <h2 className="sr-only flex items-center font-mono text-sm font-medium leading-7 text-white lg:not-sr-only">
               <span>Venez échanger!</span>
             </h2>
