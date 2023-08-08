@@ -44,7 +44,13 @@ export async function GET() {
     itunesSubtitle: `Le podcast des gens qui font le web`,
     itunesSummary: `Le podcast dédié au web et aux gens qui tous les jours construisent Internet`,
     itunesOwner: { name: 'Erreur 200', email: 'info@erreur200.com' },
-    itunesExplicit: false
+    itunesExplicit: false,
+    namespaces: {
+      'podcast': true,
+    },
+    customNamespaces: {
+      'googleplay': 'http://www.google.com/schemas/play-podcasts/1.0',
+    },
   })
 
   for (const episode of episodes) {
