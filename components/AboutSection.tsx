@@ -14,7 +14,7 @@ export function AboutSection(props) {
       <h2 className="flex items-center font-mono text-sm font-medium leading-7 text-white">
         <span>À propos du podcast</span>
       </h2>
-      <div className="my-3 flex">
+      <div className="my-3 flex gap-5">
         <Image
           className="rounded-full"
           src={david}
