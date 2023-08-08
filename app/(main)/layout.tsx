@@ -12,6 +12,8 @@ import {
   RSSIcon,
   PersonIcon,
   SpotifyIcon,
+  LinkedInIcon,
+  TwitterIcon,
 } from '@/components/Icons'
 import { HOSTS } from '@/constants'
 
@@ -46,6 +48,19 @@ const podcastLinks: PodcastLink[] = [
   },
 ]
 
+const socialLinks: PodcastLink[] = [
+  {
+    label: 'X (Twitter)',
+    Icon: TwitterIcon,
+    url: 'https://twitter.com/erreur200radio',
+  },
+  {
+    label: 'LinkedIn',
+    Icon: LinkedInIcon,
+    url: 'https://www.linkedin.com/company/82682070/admin/feed/posts/',
+  }
+]
+
 export default function MainLayout({ children }: { children: ReactNode }) {
   return (
     <AudioProvider>
@@ -65,10 +80,10 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             ))}
           </span>
         </div>
-        <div className="relative mx-auto px-4 pb-4 pt-10 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:px-8 lg:py-12 xl:px-12">
+        <div className="relative mx-auto px-4 pb-4 pt-10 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:px-8 lg:py-5 xl:px-10">
           <Link
             href="/"
-            className="relative mx-auto block w-48 sm:w-64 lg:w-auto"
+            className="relative mx-auto block w-48 sm:w-64 lg:w-auto p-5"
             aria-label="Page d'accueil"
           >
             <Image
@@ -79,11 +94,11 @@ export default function MainLayout({ children }: { children: ReactNode }) {
               priority
             />
           </Link>
-          <div className="mt-10 text-center lg:mt-12 lg:text-left">
+          <div className="mt-5 text-center lg:mt-5 lg:text-left">
             <p className="text-xl font-bold text-white">
               <Link href="/">Erreur 200</Link>
             </p>
-            <p className="mt-3 text-lg font-medium leading-8 text-light-gray">
+            <p className="mt-1 text-lg font-medium leading-8 text-light-gray">
               Le podcast des gens qui font le web
             </p>
           </div>
@@ -111,12 +126,34 @@ export default function MainLayout({ children }: { children: ReactNode }) {
               ))}
             </ul>
           </section>
+          <section className="mt-5 lg:mt-12">
+            <h2 className="sr-only flex items-center font-mono text-sm font-medium leading-7 text-white lg:not-sr-only">
+              <span>Venez échanger!</span>
+            </h2>
+            <ul
+              role="list"
+              className="mt-4 flex justify-center gap-10 text-base font-medium leading-7 text-light-gray sm:gap-8 lg:flex-col lg:gap-4"
+            >
+              {socialLinks.map(({ label, Icon, url }) => (
+                <li key={label} className="flex">
+                  <Link
+                    href={url}
+                    className="group flex items-center"
+                    aria-label={label}
+                  >
+                    <Icon className="h-8 w-8 fill-slate-400 group-hover:fill-slate-600" />
+                    <span className="hidden sm:ml-3 sm:block">{label}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         </div>
       </header>
       <main className="border-t border-border-dark lg:relative lg:mb-28 lg:ml-112 lg:border-t-0 xl:ml-120">
         <div className="relative">{children}</div>
       </main>
-      <footer className="border-t border-border-dark bg-primary-dark py-10 pb-40 sm:py-16 sm:pb-32 lg:hidden">
+      <footer className="border-t border-border-dark bg-primary-dark py-10 pb-20 sm:py-16 sm:pb-32 lg:hidden">
         <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4">
           <AboutSection />
           <h2 className="mt-8 flex items-center font-mono text-sm font-medium leading-7 text-white">
