@@ -6,7 +6,7 @@ season: 1
 title: 'La Vie du Développeur : Harmoniser Travail et Loisirs'
 slug: la-vie-du-developpeur-harmoniser-travail-et-loisirs
 description: Dans cet épisode passionnant, on plonge dans les défis humains et techniques auxquels nous sommes confrontés chaque jour au travail.
-publicationDate: 2023-07-06
+publicationDate: 2023-08-06
 url: https://erreur200.s3.eu-west-3.amazonaws.com/12-la-vie-du-developpeur-harmoniser-travail-et-loisirs.mp3
 status: published
 author: David Dias & Jean-Rémy Duboc
