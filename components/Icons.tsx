@@ -79,11 +79,11 @@ export function LinkedInIcon(props) {
     <svg
       aria-hidden="true"
       viewBox="0 0 20 20"
-      stroke-width="1.5"
+      strokeWidth="1.5"
       stroke="#2c3e50"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...props}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
