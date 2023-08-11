@@ -46,10 +46,10 @@ export async function GET() {
     itunesOwner: { name: 'Erreur 200', email: 'info@erreur200.com' },
     itunesExplicit: false,
     namespaces: {
-      'podcast': true,
+      podcast: true,
     },
     customNamespaces: {
-      'googleplay': 'http://www.google.com/schemas/play-podcasts/1.0',
+      googleplay: 'http://www.google.com/schemas/play-podcasts/1.0',
     },
   })
 
@@ -67,9 +67,10 @@ export async function GET() {
       itunesSeason: episode.season,
       itunesEpisode: episode.episodeNumber,
       itunesEpisodeType: episode.episodeType,
-      itunesImage: 'https://erreur200.com/images/erreur-200-podcast-artwork.jpg',
+      itunesImage:
+        'https://erreur200.com/images/erreur-200-podcast-artwork.jpg',
       content: episode.body.html,
-      enclosure : {url: episode.url, type: 'audio/mpeg', size: episode.size}
+      enclosure: { url: episode.url, type: 'audio/mpeg', size: episode.size },
     })
   }
 

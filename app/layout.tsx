@@ -10,6 +10,20 @@ export const metadata: Metadata = {
     template: '%s - Erreur 200',
     default: 'Erreur 200 - Le podcast des gens qui font le web',
   },
+  keywords: [
+    'podcast',
+    'francophone',
+    'web',
+    'développement',
+    'développeur',
+    'développeuse',
+    'développeurs',
+    'développeuses',
+    'développeur frontend',
+    'développeuse frontend',
+    'développeurs frontend',
+    'développeuses frontend',
+  ],
   description:
     "Erreur 200 est un podcast dédié aux gens qui font le web. Animé par deux développeurs français, l'un vivant au Canada, l'autre en Angleterre, nous échangeons sur le web d'aujourd'hui et de demain.",
   authors: [
@@ -42,8 +56,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: 'Erreur 200',
-    card: 'summary_large_image',
     creator: '@erreur200radio',
+    images:
+      'https://res.cloudinary.com/thedaviddias/image/upload/v1612027685/erreur-200/erreur-200-podcast-artwork.jpg',
   },
 }
 

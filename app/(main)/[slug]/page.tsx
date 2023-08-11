@@ -30,6 +30,19 @@ export const generateMetadata = ({
       type: 'article',
       publishedTime: episode.publicationDate,
       authors: ['David Dias', 'Jean-Rémy Duboc'],
+      images: [
+        {
+          url: `/api/og?title=${episode.title}`,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+    twitter: {
+      title: episode.title,
+      card: 'summary_large_image',
+      creator: '@erreur200radio',
+      images: `/api/og?title=${episode.title}`,
     },
   }
 }
