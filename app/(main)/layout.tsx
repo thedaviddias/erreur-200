@@ -14,6 +14,7 @@ import {
   SpotifyIcon,
   LinkedInIcon,
   TwitterIcon,
+  DiscordIcon,
 } from '@/components/Icons'
 import { HOSTS } from '@/constants'
 
@@ -49,6 +50,11 @@ const podcastLinks: PodcastLink[] = [
 ]
 
 const socialLinks: PodcastLink[] = [
+  {
+    label: 'Discord',
+    Icon: DiscordIcon,
+    url: 'https://discord.gg/WqGXnT6snJ',
+  },
   {
     label: 'X (Twitter)',
     Icon: TwitterIcon,
