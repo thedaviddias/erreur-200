@@ -3,11 +3,11 @@ type: Podcast
 guid: Generate with https://passwordsgenerator.net/GUID-Generator/
 episodeNumber: {{ properCase episodeNumber }}
 season: 1
-title: '{{ properCase episodeNumber }}: {{ properCase name }}'
+title: {{ name }}
 slug: {{ kebabCase name }}
 description:
-publicationDate: 2021-01-01
-url: https://erreur200.s3.eu-west-3.amazonaws.com/{{ properCase episodeNumber }}{{ kebabCase name }}.mp3
+publicationDate: 2023-01-01
+url: https://erreur200.s3.eu-west-3.amazonaws.com/{{ properCase episodeNumber }}-{{ kebabCase name }}.mp3
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
