@@ -23,10 +23,10 @@ N'hésitez pas à donnez votre avis sur cet épisode, sur Spotify ou sur Twitter
 
 ## Liens mentionnés
 
-* [ChatGPT](https://erreur200.com)
-* [Quelles sont les différences entre GPT 4 et GPT 3.5 ?](https://aiexplorer.io/actualites-ia/quelles-sont-les-differences-entre-gpt-4-et-gpt-3-5/)
-* [Copilot X](https://github.com/features/preview/copilot-x)
-* [JSDocs](https://jsdoc.app/about-getting-started.html)
-* [Pourquoi l’accès à ChatGPT est-il bloqué en Italie ?](https://siecledigital.fr/2023/04/03/italie-bloque-chatgpt/)
-* [Midjourney](https://www.midjourney.com/)
-* [ElevenLabs - Générer votre voix](https://elevenlabs.io/)
+- [ChatGPT](https://erreur200.com)
+- [Quelles sont les différences entre GPT 4 et GPT 3.5 ?](https://aiexplorer.io/actualites-ia/quelles-sont-les-differences-entre-gpt-4-et-gpt-3-5/)
+- [Copilot X](https://github.com/features/preview/copilot-x)
+- [JSDocs](https://jsdoc.app/about-getting-started.html)
+- [Pourquoi l’accès à ChatGPT est-il bloqué en Italie ?](https://siecledigital.fr/2023/04/03/italie-bloque-chatgpt/)
+- [Midjourney](https://www.midjourney.com/)
+- [ElevenLabs - Générer votre voix](https://elevenlabs.io/)
