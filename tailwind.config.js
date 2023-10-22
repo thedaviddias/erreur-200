@@ -25,6 +25,12 @@ module.exports = {
             },
           },
         },
+        slate: {
+          css:{
+            '--tw-prose-quotes': theme('colors.white'),
+            '--tw-prose-quote-borders': theme('colors.accent-red'),
+        }
+      }
       }),
       colors: {
         'primary-dark': '#1a2940',
