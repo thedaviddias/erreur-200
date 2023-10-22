@@ -11,8 +11,8 @@ url: https://erreur200.s3.eu-west-3.amazonaws.com/15-les-etl-kafka-et-confluent-
 status: published
 author: David Dias & Jean-Rémy Duboc
 episodeType: full
-duration: 2460 # in seconds
-size: 95898000 # in bytes
+duration: 2782
+size: 66800000
 ---
 
 Dans cet épisode pour les mordus de data, Jean-Rémy a rencontré [Fred Cecilia](https://www.linkedin.com/in/fred-cecilia/), ingénieur chez [Confluent](https://www.confluent.io/fr-fr/). Confluent est l'enterprise spécialistes du système ETL open-source [Kafka](https://kafka.apache.org/).
