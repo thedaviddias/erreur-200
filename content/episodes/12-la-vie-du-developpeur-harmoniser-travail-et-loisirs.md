@@ -24,5 +24,5 @@ Alors, installez-vous confortablement et préparez-vous pour une discussion qui 
 ## Liens mentionnés
 
 - [Site de Jean-Rémy - Codaille.com](https://codaille.com/)
-- [Site de David Dias](https://thedaviddias.dev/)
+- [Site de David Dias](https://thedaviddias.com/)
 - [Newsletter de David Dias - David's Dev Diary](https://thedaviddias.substack.com/)

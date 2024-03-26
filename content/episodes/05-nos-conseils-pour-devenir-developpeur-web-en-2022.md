@@ -26,7 +26,7 @@ Pour demander à David de vous guider dans le monde du web:
 
 Les profils de David sur les médias sociaux:
 
-- [Site Personnel - The David Dias](https://thedaviddias.dev/)
+- [Site Personnel - The David Dias](https://thedaviddias.com/)
 - [Twitter](https://twitter.com/TheDavidDias)
 - [LinkedIn](https://www.linkedin.com/in/thedaviddias/)
 

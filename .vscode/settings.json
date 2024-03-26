@@ -26,4 +26,5 @@
   },
   "frontMatter.content.fmHighlight": true,
   "frontMatter.content.autoUpdateDate": false,
+  "frontMatter.dashboard.openOnStart": true,
 }

@@ -88,7 +88,7 @@ export default async function Episode({
         <hr className="my-12 border-gray-200" />
         {episode?.body.html && (
           <div
-            className="prose prose-slate mt-14 text-light-gray [&>h2]:mt-12 [&>h2]:flex [&>h2]:items-center [&>h2]:font-mono [&>h2]:text-sm [&>h2]:font-medium [&>h2]:leading-7 [&>h2]:text-white [&>h2]:before:mr-3 [&>h2]:before:h-3 [&>h2]:before:rounded-r-full [&>ul]:mt-6 [&>ul]:list-['\2013\20'] [&>ul]:pl-5"
+            className="prose prose-slate mt-14 text-light-gray [&>h2]:mt-12 [&>h2]:flex [&>h2]:items-center [&>h2]:font-mono [&>h2]:text-sm [&>h2]:font-medium [&>h2]:leading-7 [&>h2]:text-white [&>h2]:before:mr-3 [&>h2]:before:h-3 [&>h2]:before:rounded-r-full [&>ul]:mt-6 [&>ul]:list-['\2013\20'] [&>ul]:pl-5 [&>h3]:font-mono [&>h3]:text-white [&>h3]:before:mr-3 [&>h3]:before:h-3"
             dangerouslySetInnerHTML={{ __html: episode.body.html }}
           />
         )}
