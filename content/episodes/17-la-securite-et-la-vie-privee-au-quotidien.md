@@ -26,10 +26,19 @@ Il y a tellement à savoir sur ces sujets mais nous vous partageons les bases po
 
 ### Outils
 
+* [Incogni - Nettoyer les informations détenus par les data brokers](https://incogni.com/)
 * [1Password - Gestionnaire de mot de passes](https://1password.com/fr)
 * [Bitwarden - Gestionnaire de mot de passes open source](https://bitwarden.com/)
 * [SimpleLogin - Envoyer et recevoir des emails anonymement](https://simplelogin.io/)
 * [Proton - Le meilleur et plus sécurisé webmail (et plus encore)](https://proton.me/)
+
+### Livres
+
+* [Amazon.fr - Extreme Privacy: What It Takes to Disappear](https://www.amazon.fr/Extreme-Privacy-What-Takes-Disappear/dp/B09W78GW2T/ref=pd_vtp_h_pd_vtp_h_d_sccl_1/259-6153317-9681812?pd_rd_w=OV0R7&content-id=amzn1.sym.f66a82f4-7276-4231-ba6b-c00184d21fe0&pf_rd_p=f66a82f4-7276-4231-ba6b-c00184d21fe0&pf_rd_r=YV5ZDKEXT50MAJW53Y70&pd_rd_wg=NBIRV&pd_rd_r=fe82a39e-a2e2-4b52-8095-d2fd4280a4e6&pd_rd_i=B09W78GW2T&psc=1)
+
+### Clé de sécurité
+
+* [Yubico - clé de sécurité](https://www.yubico.com/?lang=fr)
 
 ### Navigateurs
 
