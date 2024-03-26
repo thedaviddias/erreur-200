@@ -13,11 +13,11 @@ Join us to talk about code, accessibility, JavaScript frameworks, UX, and many o
 # Latests Podcast Episodes
 
 <!-- PODCAST-LIST:START -->
-- [Questions de débutants en développement web avec Killian Vaillant](https://erreur200.com/questions-de-debutants-en-developpement-web-avec-killian-vaillant)
-- [Les Tendances du Développement Web en 2022](https://erreur200.com/les-tendances-du-developpement-web-en-2022)
-- [La Communication Dans Le Monde Du Web](https://erreur200.com/la-communication-dans-le-monde-du-web)
-- [Apprentissage et Veille Technologique au quotidien](https://erreur200.com/apprentissage-et-veille-technologique-au-quotidien)
-- [Comment devenir un développeur web en 2022 &lpar;2&rpar;](https://erreur200.com/devenir-developpeur-web-2022-2)
+- [La sécurité et la vie privée au quotidien](https://erreur200.com/la-securite-et-la-vie-privee-au-quotidien)
+- [Les monorepos](https://erreur200.com/les-monorepos)
+- [Les ETLs, Kafka et Confluent avec Fred Cecilia](https://erreur200.com/etl-kafka-confluent)
+- [Syndrome de L&#39;imposteur Chez Les Développeurs Web](https://erreur200.com/syndrome-de-l-imposteur-chez-les-developpeurs-web)
+- [Chat GPT et l&#39;IA pour les développeurs](https://erreur200.com/chat-gpt-ia-developpeurs)
 <!-- PODCAST-LIST:END -->
 
 ## Create a new episode
