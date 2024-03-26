@@ -15,7 +15,8 @@ import {
   LinkedInIcon,
   TwitterIcon,
   DiscordIcon,
-  CupIcon
+  CupIcon,
+  GithubIcon
 } from '@/components/Icons'
 import { HOSTS } from '@/constants'
 
@@ -65,6 +66,11 @@ const socialLinks: PodcastLink[] = [
     label: 'LinkedIn',
     Icon: LinkedInIcon,
     url: 'https://www.linkedin.com/company/82682070/admin/feed/posts/',
+  },
+  {
+    label: 'Github - code source',
+    Icon: GithubIcon,
+    url: 'https://github.com/thedaviddias/erreur-200',
   },
 ]
 
