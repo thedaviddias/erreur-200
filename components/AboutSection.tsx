@@ -40,7 +40,7 @@ export function AboutSection(props) {
       >
         Erreur 200 est un podcast dédié aux gens qui font le web. Animé par deux
         développeurs français, l&#39;un vivant au Canada (
-        <a href="https://thedaviddias.dev" className="underline">
+        <a href="https://thedaviddias.com" className="underline">
           David Dias
         </a>
         ), l&#39;autre en Angleterre (

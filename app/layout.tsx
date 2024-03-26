@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description:
     "Erreur 200 est un podcast dédié aux gens qui font le web. Animé par deux développeurs français, l'un vivant au Canada, l'autre en Angleterre, nous échangeons sur le web d'aujourd'hui et de demain.",
   authors: [
-    { name: 'David Dias', url: 'https://thedaviddias.dev' },
+    { name: 'David Dias', url: 'https://thedaviddias.com' },
     { name: 'Jean-Rémy Duboc', url: 'https://codaille.com' },
   ],
   themeColor: '#b12518ff',

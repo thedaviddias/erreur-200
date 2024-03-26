@@ -27,5 +27,5 @@ size: 10100000
 
 ## Liens
 
-- [Blog de David Dias](https://thedaviddias.dev)
+- [Blog de David Dias](https://thedaviddias.com)
 - [Contacter Jean-Rémy sur Twitter](https://twitter.com/JeanRemyDuboc)
