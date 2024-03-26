@@ -15,6 +15,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
   DiscordIcon,
+  CupIcon
 } from '@/components/Icons'
 import { HOSTS } from '@/constants'
 
@@ -67,6 +68,14 @@ const socialLinks: PodcastLink[] = [
   },
 ]
 
+const supportLinks: PodcastLink[] = [
+  {
+    label: 'Patreon',
+    Icon: CupIcon,
+    url: 'https://patreon.com/Erreur200?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink',
+  },
+]
+
 export default function MainLayout({ children }: { children: ReactNode }) {
   return (
     <AudioProvider>
@@ -89,7 +98,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
         <div className="relative mx-auto px-4 pb-4 pt-0 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:px-8 lg:py-5 xl:px-10">
           <Link
             href="/"
-            className="relative mx-auto block w-48 p-5 sm:w-64 lg:w-auto"
+            className="relative mx-auto block w-48 p-5 sm:w-64"
             aria-label="Page d'accueil"
           >
             <Image
@@ -116,7 +125,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             <div className="h-px bg-gradient-to-r from-slate-200/0 via-slate-200 to-slate-200/0 lg:hidden" />
             <ul
               role="list"
-              className="mt-4 flex justify-center gap-10 text-base font-medium leading-7 text-light-gray sm:gap-8 lg:flex-col lg:gap-4"
+              className="mt-4 flex justify-center gap-4 text-base font-medium leading-7 text-light-gray sm:gap-8 lg:flex-col lg:gap-3"
             >
               {podcastLinks.map(({ label, Icon, url }) => (
                 <li key={label} className="flex">
@@ -125,7 +134,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
                     className="group flex items-center"
                     aria-label={label}
                   >
-                    <Icon className="h-8 w-8 fill-slate-400 group-hover:fill-slate-600" />
+                    <Icon className="h-5 w-5 fill-slate-400 group-hover:fill-slate-600" />
                     <span className="hidden sm:ml-3 sm:block">{label}</span>
                   </Link>
                 </li>
@@ -138,7 +147,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             </h2>
             <ul
               role="list"
-              className="mt-4 flex justify-center gap-10 text-base font-medium leading-7 text-light-gray sm:gap-8 lg:flex-col lg:gap-4"
+              className="mt-4 flex justify-center gap-4 text-base font-medium leading-7 text-light-gray sm:gap-8 lg:flex-col lg:gap-3"
             >
               {socialLinks.map(({ label, Icon, url }) => (
                 <li key={label} className="flex">
@@ -147,7 +156,29 @@ export default function MainLayout({ children }: { children: ReactNode }) {
                     className="group flex items-center"
                     aria-label={label}
                   >
-                    <Icon className="h-8 w-8 fill-slate-400 group-hover:fill-slate-600" />
+                    <Icon className="h-5 w-5 fill-slate-400 group-hover:fill-slate-600" />
+                    <span className="hidden sm:ml-3 sm:block">{label}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+          <section className="mt-5 lg:mt-8">
+            <h2 className="sr-only flex items-center font-mono text-sm font-medium leading-7 text-white lg:not-sr-only">
+              <span>Nous soutenir</span>
+            </h2>
+            <ul
+              role="list"
+              className="mt-4 flex justify-center gap-4 text-base font-medium leading-7 text-light-gray sm:gap-8 lg:flex-col lg:gap-3"
+            >
+              {supportLinks.map(({ label, Icon, url }) => (
+                <li key={label} className="flex">
+                  <Link
+                    href={url}
+                    className="group flex items-center"
+                    aria-label={label}
+                  >
+                    <Icon className="h-5 w-5 fill-slate-400 group-hover:fill-slate-600" />
                     <span className="hidden sm:ml-3 sm:block">{label}</span>
                   </Link>
                 </li>
